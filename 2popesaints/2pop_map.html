@@ -1,0 +1,2950 @@
+<!DOCTYPE html>
+<head>
+   <link rel="stylesheet" href="http://cdn.leafletjs.com/leaflet-0.5/leaflet.css" />
+   <script src="http://cdn.leafletjs.com/leaflet-0.5/leaflet.js"></script>
+   
+   
+   
+   
+
+
+<style>
+
+#map {
+  position:absolute;
+  top:0;
+  bottom:0;
+  right:0;
+  left:0;
+}
+
+</style>
+</head>
+<body>
+
+        <div id="map" style="width: 960px; height: 500px"></div>
+
+<script>
+
+
+
+var map = L.map('map').setView([32.4942772, -34.505193], 2);
+
+L.tileLayer('http://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
+    maxZoom: 18,
+    attribution: 'Map data (c) <a href="http://openstreetmap.org">OpenStreetMap</a> contributors'
+}).addTo(map);
+
+
+var marker_1 = L.marker([43.8245693, 11.21708]);
+marker_1.bindPopup("twitt");
+map.addLayer(marker_1)
+
+var marker_2 = L.marker([41.90168782, 12.45558844]);
+marker_2.bindPopup("twitt");
+map.addLayer(marker_2)
+
+var marker_3 = L.marker([44.1773852, 12.03517891]);
+marker_3.bindPopup("twitt");
+map.addLayer(marker_3)
+
+var marker_4 = L.marker([41.90221311, 12.45683994]);
+marker_4.bindPopup("twitt");
+map.addLayer(marker_4)
+
+var marker_5 = L.marker([30.3352391, -93.27281936]);
+marker_5.bindPopup("twitt");
+map.addLayer(marker_5)
+
+var marker_6 = L.marker([45.82798517, 9.04629736]);
+marker_6.bindPopup("twitt");
+map.addLayer(marker_6)
+
+var marker_7 = L.marker([45.8286446, 9.04671897]);
+marker_7.bindPopup("twitt");
+map.addLayer(marker_7)
+
+var marker_8 = L.marker([41.9011683, 12.4563432]);
+marker_8.bindPopup("twitt");
+map.addLayer(marker_8)
+
+var marker_9 = L.marker([30.33511795, -93.27304806]);
+marker_9.bindPopup("twitt");
+map.addLayer(marker_9)
+
+var marker_10 = L.marker([30.33513474, -93.27300469]);
+marker_10.bindPopup("twitt");
+map.addLayer(marker_10)
+
+var marker_11 = L.marker([6.4014134, 5.6246652]);
+marker_11.bindPopup("twitt");
+map.addLayer(marker_11)
+
+var marker_12 = L.marker([41.9011343, 12.4562506]);
+marker_12.bindPopup("twitt");
+map.addLayer(marker_12)
+
+var marker_13 = L.marker([41.9021909, 12.45690483]);
+marker_13.bindPopup("twitt");
+map.addLayer(marker_13)
+
+var marker_14 = L.marker([41.9010291, 12.4562531]);
+marker_14.bindPopup("twitt");
+map.addLayer(marker_14)
+
+var marker_15 = L.marker([45.82882527, 9.04669432]);
+marker_15.bindPopup("twitt");
+map.addLayer(marker_15)
+
+var marker_16 = L.marker([45.8284145, 9.04664585]);
+marker_16.bindPopup("twitt");
+map.addLayer(marker_16)
+
+var marker_17 = L.marker([41.90168782, 12.45558844]);
+marker_17.bindPopup("twitt");
+map.addLayer(marker_17)
+
+var marker_18 = L.marker([45.82848289, 9.04665387]);
+marker_18.bindPopup("twitt");
+map.addLayer(marker_18)
+
+var marker_19 = L.marker([9.00947559, -79.51479104]);
+marker_19.bindPopup("twitt");
+map.addLayer(marker_19)
+
+var marker_20 = L.marker([14.6199349, 121.0535061]);
+marker_20.bindPopup("twitt");
+map.addLayer(marker_20)
+
+var marker_21 = L.marker([41.9021916, 12.45690492]);
+marker_21.bindPopup("twitt");
+map.addLayer(marker_21)
+
+var marker_22 = L.marker([41.9023679, 12.45864975]);
+marker_22.bindPopup("twitt");
+map.addLayer(marker_22)
+
+var marker_23 = L.marker([45.82786966, 9.04598872]);
+marker_23.bindPopup("twitt");
+map.addLayer(marker_23)
+
+var marker_24 = L.marker([41.9023679, 12.45864975]);
+marker_24.bindPopup("twitt");
+map.addLayer(marker_24)
+
+var marker_25 = L.marker([41.90239949, 12.45669048]);
+marker_25.bindPopup("twitt");
+map.addLayer(marker_25)
+
+var marker_26 = L.marker([41.9023368, 12.4585522]);
+marker_26.bindPopup("twitt");
+map.addLayer(marker_26)
+
+var marker_27 = L.marker([41.16465304, 14.66692965]);
+marker_27.bindPopup("twitt");
+map.addLayer(marker_27)
+
+var marker_28 = L.marker([45.70441066, 9.49936157]);
+marker_28.bindPopup("twitt");
+map.addLayer(marker_28)
+
+var marker_29 = L.marker([41.8582023, 12.4531413]);
+marker_29.bindPopup("twitt");
+map.addLayer(marker_29)
+
+var marker_30 = L.marker([41.90176553, 12.45512749]);
+marker_30.bindPopup("twitt");
+map.addLayer(marker_30)
+
+var marker_31 = L.marker([41.90178938, 12.45508667]);
+marker_31.bindPopup("twitt");
+map.addLayer(marker_31)
+
+var marker_32 = L.marker([41.90173854, 12.45512481]);
+marker_32.bindPopup("twitt");
+map.addLayer(marker_32)
+
+var marker_33 = L.marker([41.90172748, 12.45513478]);
+marker_33.bindPopup("twitt");
+map.addLayer(marker_33)
+
+var marker_34 = L.marker([41.90176423, 12.45583693]);
+marker_34.bindPopup("twitt");
+map.addLayer(marker_34)
+
+var marker_35 = L.marker([41.90171604, 12.45514694]);
+marker_35.bindPopup("twitt");
+map.addLayer(marker_35)
+
+var marker_36 = L.marker([41.9022586, 12.45666021]);
+marker_36.bindPopup("twitt");
+map.addLayer(marker_36)
+
+var marker_37 = L.marker([45.70563022, 9.49865362]);
+marker_37.bindPopup("twitt");
+map.addLayer(marker_37)
+
+var marker_38 = L.marker([-12.0492332, -77.0690621]);
+marker_38.bindPopup("twitt");
+map.addLayer(marker_38)
+
+var marker_39 = L.marker([33.89250431, 35.55772939]);
+marker_39.bindPopup("twitt");
+map.addLayer(marker_39)
+
+var marker_40 = L.marker([43.57397685, 12.14954579]);
+marker_40.bindPopup("twitt");
+map.addLayer(marker_40)
+
+var marker_41 = L.marker([30.33528105, -93.2727694]);
+marker_41.bindPopup("twitt");
+map.addLayer(marker_41)
+
+var marker_42 = L.marker([45.70725866, 9.49950817]);
+marker_42.bindPopup("twitt");
+map.addLayer(marker_42)
+
+var marker_43 = L.marker([41.90239551, 12.45775857]);
+marker_43.bindPopup("twitt");
+map.addLayer(marker_43)
+
+var marker_44 = L.marker([45.70739369, 9.49932653]);
+marker_44.bindPopup("twitt");
+map.addLayer(marker_44)
+
+var marker_45 = L.marker([45.5281998, 10.533399]);
+marker_45.bindPopup("twitt");
+map.addLayer(marker_45)
+
+var marker_46 = L.marker([8.1296479, -63.5560826]);
+marker_46.bindPopup("twitt");
+map.addLayer(marker_46)
+
+var marker_47 = L.marker([41.9022614, 12.4576441]);
+marker_47.bindPopup("twitt");
+map.addLayer(marker_47)
+
+var marker_48 = L.marker([-11.9295755, -77.0569575]);
+marker_48.bindPopup("twitt");
+map.addLayer(marker_48)
+
+var marker_49 = L.marker([30.33519383, -93.27297972]);
+marker_49.bindPopup("twitt");
+map.addLayer(marker_49)
+
+var marker_50 = L.marker([41.9023357, 12.4576994]);
+marker_50.bindPopup("twitt");
+map.addLayer(marker_50)
+
+var marker_51 = L.marker([-11.9295756, -77.0569572]);
+marker_51.bindPopup("twitt");
+map.addLayer(marker_51)
+
+var marker_52 = L.marker([-11.929575, -77.0569571]);
+marker_52.bindPopup("twitt");
+map.addLayer(marker_52)
+
+var marker_53 = L.marker([44.4005086, 8.9367446]);
+marker_53.bindPopup("twitt");
+map.addLayer(marker_53)
+
+var marker_54 = L.marker([-11.9295761, -77.0569574]);
+marker_54.bindPopup("twitt");
+map.addLayer(marker_54)
+
+var marker_55 = L.marker([46.28954818, 11.55838742]);
+marker_55.bindPopup("twitt");
+map.addLayer(marker_55)
+
+var marker_56 = L.marker([45.70756309, 9.49959182]);
+marker_56.bindPopup("twitt");
+map.addLayer(marker_56)
+
+var marker_57 = L.marker([-33.8723556, -57.3712603]);
+marker_57.bindPopup("twitt");
+map.addLayer(marker_57)
+
+var marker_58 = L.marker([51.5073297, -0.1329656]);
+marker_58.bindPopup("twitt");
+map.addLayer(marker_58)
+
+var marker_59 = L.marker([41.90244027, 12.45867857]);
+marker_59.bindPopup("twitt");
+map.addLayer(marker_59)
+
+var marker_60 = L.marker([41.90536176, 12.48506573]);
+marker_60.bindPopup("twitt");
+map.addLayer(marker_60)
+
+var marker_61 = L.marker([45.70620341, 9.49941547]);
+marker_61.bindPopup("twitt");
+map.addLayer(marker_61)
+
+var marker_62 = L.marker([30.33518013, -93.27300386]);
+marker_62.bindPopup("twitt");
+map.addLayer(marker_62)
+
+var marker_63 = L.marker([40.5005937, -3.87631139]);
+marker_63.bindPopup("twitt");
+map.addLayer(marker_63)
+
+var marker_64 = L.marker([41.19290267, 16.61445348]);
+marker_64.bindPopup("twitt");
+map.addLayer(marker_64)
+
+var marker_65 = L.marker([49.3538443, 0.0898365]);
+marker_65.bindPopup("twitt");
+map.addLayer(marker_65)
+
+var marker_66 = L.marker([34.2690668, -118.3120923]);
+marker_66.bindPopup("twitt");
+map.addLayer(marker_66)
+
+var marker_67 = L.marker([34.2690668, -118.3120923]);
+marker_67.bindPopup("twitt");
+map.addLayer(marker_67)
+
+var marker_68 = L.marker([6.8641631, 7.4087525]);
+marker_68.bindPopup("twitt");
+map.addLayer(marker_68)
+
+var marker_69 = L.marker([48.77109149, -1.56979897]);
+marker_69.bindPopup("twitt");
+map.addLayer(marker_69)
+
+var marker_70 = L.marker([41.90240882, 12.45913359]);
+marker_70.bindPopup("twitt");
+map.addLayer(marker_70)
+
+var marker_71 = L.marker([45.691999, 8.6032402]);
+marker_71.bindPopup("twitt");
+map.addLayer(marker_71)
+
+var marker_72 = L.marker([41.9009876, 12.4649529]);
+marker_72.bindPopup("twitt");
+map.addLayer(marker_72)
+
+var marker_73 = L.marker([40.5005937, -3.87631139]);
+marker_73.bindPopup("twitt");
+map.addLayer(marker_73)
+
+var marker_74 = L.marker([41.900929, 12.455666]);
+marker_74.bindPopup("twitt");
+map.addLayer(marker_74)
+
+var marker_75 = L.marker([33.89945619, -117.88976796]);
+marker_75.bindPopup("twitt");
+map.addLayer(marker_75)
+
+var marker_76 = L.marker([6.3977252, 5.6123645]);
+marker_76.bindPopup("twitt");
+map.addLayer(marker_76)
+
+var marker_77 = L.marker([41.901168, 12.455527]);
+marker_77.bindPopup("twitt");
+map.addLayer(marker_77)
+
+var marker_78 = L.marker([42.08077222, -78.48204742]);
+marker_78.bindPopup("twitt");
+map.addLayer(marker_78)
+
+var marker_79 = L.marker([23.1708287, -102.8663619]);
+marker_79.bindPopup("twitt");
+map.addLayer(marker_79)
+
+var marker_80 = L.marker([45.53527775, 10.23476066]);
+marker_80.bindPopup("twitt");
+map.addLayer(marker_80)
+
+var marker_81 = L.marker([45.70725239, 9.49624477]);
+marker_81.bindPopup("twitt");
+map.addLayer(marker_81)
+
+var marker_82 = L.marker([40.74573357, 14.47843426]);
+marker_82.bindPopup("twitt");
+map.addLayer(marker_82)
+
+var marker_83 = L.marker([44.4005437, 8.936835]);
+marker_83.bindPopup("twitt");
+map.addLayer(marker_83)
+
+var marker_84 = L.marker([41.901071, 12.455593]);
+marker_84.bindPopup("twitt");
+map.addLayer(marker_84)
+
+var marker_85 = L.marker([23.17083, -102.8663478]);
+marker_85.bindPopup("twitt");
+map.addLayer(marker_85)
+
+var marker_86 = L.marker([37.79026721, -122.42937237]);
+marker_86.bindPopup("twitt");
+map.addLayer(marker_86)
+
+var marker_87 = L.marker([43.0975167, 12.38701519]);
+marker_87.bindPopup("twitt");
+map.addLayer(marker_87)
+
+var marker_88 = L.marker([31.85686067, -116.59975908]);
+marker_88.bindPopup("twitt");
+map.addLayer(marker_88)
+
+var marker_89 = L.marker([41.89845818, 12.46940064]);
+marker_89.bindPopup("twitt");
+map.addLayer(marker_89)
+
+var marker_90 = L.marker([45.4518462, 9.0807399]);
+marker_90.bindPopup("twitt");
+map.addLayer(marker_90)
+
+var marker_91 = L.marker([30.33520745, -93.27295583]);
+marker_91.bindPopup("twitt");
+map.addLayer(marker_91)
+
+var marker_92 = L.marker([41.862628, 12.20588111]);
+marker_92.bindPopup("twitt");
+map.addLayer(marker_92)
+
+var marker_93 = L.marker([6.8641631, 7.4087525]);
+marker_93.bindPopup("twitt");
+map.addLayer(marker_93)
+
+var marker_94 = L.marker([41.9024088, 12.45908688]);
+marker_94.bindPopup("twitt");
+map.addLayer(marker_94)
+
+var marker_95 = L.marker([38.9325064, -77.0039443]);
+marker_95.bindPopup("twitt");
+map.addLayer(marker_95)
+
+var marker_96 = L.marker([44.4005037, 8.9367628]);
+marker_96.bindPopup("twitt");
+map.addLayer(marker_96)
+
+var marker_97 = L.marker([41.90207021, 12.45707151]);
+marker_97.bindPopup("twitt");
+map.addLayer(marker_97)
+
+var marker_98 = L.marker([45.6098886, 10.505094]);
+marker_98.bindPopup("twitt");
+map.addLayer(marker_98)
+
+var marker_99 = L.marker([14.83720092, 120.96285157]);
+marker_99.bindPopup("twitt");
+map.addLayer(marker_99)
+
+var marker_100 = L.marker([14.46544074, 121.03825975]);
+marker_100.bindPopup("twitt");
+map.addLayer(marker_100)
+
+var marker_101 = L.marker([30.33520108, -93.27298022]);
+marker_101.bindPopup("twitt");
+map.addLayer(marker_101)
+
+var marker_102 = L.marker([44.4261411, 8.82070221]);
+marker_102.bindPopup("twitt");
+map.addLayer(marker_102)
+
+var marker_103 = L.marker([14.5389448, 121.061167]);
+marker_103.bindPopup("twitt");
+map.addLayer(marker_103)
+
+var marker_104 = L.marker([45.70755848, 9.49500223]);
+marker_104.bindPopup("twitt");
+map.addLayer(marker_104)
+
+var marker_105 = L.marker([-30.01880492, -51.19590266]);
+marker_105.bindPopup("twitt");
+map.addLayer(marker_105)
+
+var marker_106 = L.marker([30.33520108, -93.27298022]);
+marker_106.bindPopup("twitt");
+map.addLayer(marker_106)
+
+var marker_107 = L.marker([51.95255798, 7.61200118]);
+marker_107.bindPopup("twitt");
+map.addLayer(marker_107)
+
+var marker_108 = L.marker([45.6097357, 10.5052975]);
+marker_108.bindPopup("twitt");
+map.addLayer(marker_108)
+
+var marker_109 = L.marker([4.5858447, -74.1669268]);
+marker_109.bindPopup("twitt");
+map.addLayer(marker_109)
+
+var marker_110 = L.marker([41.9023123, 12.4576954]);
+marker_110.bindPopup("twitt");
+map.addLayer(marker_110)
+
+var marker_111 = L.marker([45.7076037, 9.4951246]);
+marker_111.bindPopup("twitt");
+map.addLayer(marker_111)
+
+var marker_112 = L.marker([45.70747948, 9.49509518]);
+marker_112.bindPopup("twitt");
+map.addLayer(marker_112)
+
+var marker_113 = L.marker([30.33519931, -93.27292997]);
+marker_113.bindPopup("twitt");
+map.addLayer(marker_113)
+
+var marker_114 = L.marker([41.90618036, 12.45818923]);
+marker_114.bindPopup("twitt");
+map.addLayer(marker_114)
+
+var marker_115 = L.marker([14.8502439, -91.5230096]);
+marker_115.bindPopup("twitt");
+map.addLayer(marker_115)
+
+var marker_116 = L.marker([45.70749698, 9.49512324]);
+marker_116.bindPopup("twitt");
+map.addLayer(marker_116)
+
+var marker_117 = L.marker([51.1922714, 6.4443621]);
+marker_117.bindPopup("twitt");
+map.addLayer(marker_117)
+
+var marker_118 = L.marker([14.46544066, 121.03825983]);
+marker_118.bindPopup("twitt");
+map.addLayer(marker_118)
+
+var marker_119 = L.marker([14.2731397, 121.1027338]);
+marker_119.bindPopup("twitt");
+map.addLayer(marker_119)
+
+var marker_120 = L.marker([4.5858447, -74.1669268]);
+marker_120.bindPopup("twitt");
+map.addLayer(marker_120)
+
+var marker_121 = L.marker([40.85088184, 14.23386485]);
+marker_121.bindPopup("twitt");
+map.addLayer(marker_121)
+
+var marker_122 = L.marker([51.95254286, 7.61214371]);
+marker_122.bindPopup("twitt");
+map.addLayer(marker_122)
+
+var marker_123 = L.marker([14.6809813, 121.0428773]);
+marker_123.bindPopup("twitt");
+map.addLayer(marker_123)
+
+var marker_124 = L.marker([41.90172283, 12.45589158]);
+marker_124.bindPopup("twitt");
+map.addLayer(marker_124)
+
+var marker_125 = L.marker([30.33513968, -93.27300008]);
+marker_125.bindPopup("twitt");
+map.addLayer(marker_125)
+
+var marker_126 = L.marker([14.46544078, 121.03825971]);
+marker_126.bindPopup("twitt");
+map.addLayer(marker_126)
+
+var marker_127 = L.marker([40.5005937, -3.87631139]);
+marker_127.bindPopup("twitt");
+map.addLayer(marker_127)
+
+var marker_128 = L.marker([41.91556932, 12.53116571]);
+marker_128.bindPopup("twitt");
+map.addLayer(marker_128)
+
+var marker_129 = L.marker([30.33507492, -93.27299401]);
+marker_129.bindPopup("twitt");
+map.addLayer(marker_129)
+
+var marker_130 = L.marker([40.41195946, -3.72815722]);
+marker_130.bindPopup("twitt");
+map.addLayer(marker_130)
+
+var marker_131 = L.marker([14.6204507, 121.0530646]);
+marker_131.bindPopup("twitt");
+map.addLayer(marker_131)
+
+var marker_132 = L.marker([15.49101983, 120.96765763]);
+marker_132.bindPopup("twitt");
+map.addLayer(marker_132)
+
+var marker_133 = L.marker([14.6807559, 121.0593732]);
+marker_133.bindPopup("twitt");
+map.addLayer(marker_133)
+
+var marker_134 = L.marker([-33.8722925, -57.3711517]);
+marker_134.bindPopup("twitt");
+map.addLayer(marker_134)
+
+var marker_135 = L.marker([41.93812289, 12.51739318]);
+marker_135.bindPopup("twitt");
+map.addLayer(marker_135)
+
+var marker_136 = L.marker([-11.9295761, -77.0569574]);
+marker_136.bindPopup("twitt");
+map.addLayer(marker_136)
+
+var marker_137 = L.marker([41.93306424, 12.44292402]);
+marker_137.bindPopup("twitt");
+map.addLayer(marker_137)
+
+var marker_138 = L.marker([51.76670409, -0.23153468]);
+marker_138.bindPopup("twitt");
+map.addLayer(marker_138)
+
+var marker_139 = L.marker([-11.9295761, -77.0569572]);
+marker_139.bindPopup("twitt");
+map.addLayer(marker_139)
+
+var marker_140 = L.marker([61.50393776, 23.83041348]);
+marker_140.bindPopup("twitt");
+map.addLayer(marker_140)
+
+var marker_141 = L.marker([39.11845069, -77.532734]);
+marker_141.bindPopup("twitt");
+map.addLayer(marker_141)
+
+var marker_142 = L.marker([40.55855856, -74.42073087]);
+marker_142.bindPopup("twitt");
+map.addLayer(marker_142)
+
+var marker_143 = L.marker([14.46791075, 121.05548358]);
+marker_143.bindPopup("twitt");
+map.addLayer(marker_143)
+
+var marker_144 = L.marker([40.41214641, -3.72810069]);
+marker_144.bindPopup("twitt");
+map.addLayer(marker_144)
+
+var marker_145 = L.marker([46.1599411, 9.86532268]);
+marker_145.bindPopup("twitt");
+map.addLayer(marker_145)
+
+var marker_146 = L.marker([40.5005937, -3.87631139]);
+marker_146.bindPopup("twitt");
+map.addLayer(marker_146)
+
+var marker_147 = L.marker([55.0004806, -1.4327132]);
+marker_147.bindPopup("twitt");
+map.addLayer(marker_147)
+
+var marker_148 = L.marker([18.3927658, -66.0313882]);
+marker_148.bindPopup("twitt");
+map.addLayer(marker_148)
+
+var marker_149 = L.marker([40.4868971, 16.912612]);
+marker_149.bindPopup("twitt");
+map.addLayer(marker_149)
+
+var marker_150 = L.marker([32.90301966, -96.86279235]);
+marker_150.bindPopup("twitt");
+map.addLayer(marker_150)
+
+var marker_151 = L.marker([45.2982628, 9.4173578]);
+marker_151.bindPopup("twitt");
+map.addLayer(marker_151)
+
+var marker_152 = L.marker([41.90170518, 12.45664026]);
+marker_152.bindPopup("twitt");
+map.addLayer(marker_152)
+
+var marker_153 = L.marker([6.5171639, 3.3596526]);
+marker_153.bindPopup("twitt");
+map.addLayer(marker_153)
+
+var marker_154 = L.marker([6.5171639, 3.3596526]);
+marker_154.bindPopup("twitt");
+map.addLayer(marker_154)
+
+var marker_155 = L.marker([0.3775738, 32.6004898]);
+marker_155.bindPopup("twitt");
+map.addLayer(marker_155)
+
+var marker_156 = L.marker([45.70309652, 9.49229272]);
+marker_156.bindPopup("twitt");
+map.addLayer(marker_156)
+
+var marker_157 = L.marker([41.90204572, 12.45707181]);
+marker_157.bindPopup("twitt");
+map.addLayer(marker_157)
+
+var marker_158 = L.marker([6.8641631, 7.4087525]);
+marker_158.bindPopup("twitt");
+map.addLayer(marker_158)
+
+var marker_159 = L.marker([51.248757, 6.7627021]);
+marker_159.bindPopup("twitt");
+map.addLayer(marker_159)
+
+var marker_160 = L.marker([10.7164202, -71.6336269]);
+marker_160.bindPopup("twitt");
+map.addLayer(marker_160)
+
+var marker_161 = L.marker([-12.085, -77.0361]);
+marker_161.bindPopup("twitt");
+map.addLayer(marker_161)
+
+var marker_162 = L.marker([41.883174, 12.4072012]);
+marker_162.bindPopup("twitt");
+map.addLayer(marker_162)
+
+var marker_163 = L.marker([45.73296595, 11.79698191]);
+marker_163.bindPopup("twitt");
+map.addLayer(marker_163)
+
+var marker_164 = L.marker([-33.8723321, -57.3711918]);
+marker_164.bindPopup("twitt");
+map.addLayer(marker_164)
+
+var marker_165 = L.marker([41.883174, 12.4072012]);
+marker_165.bindPopup("twitt");
+map.addLayer(marker_165)
+
+var marker_166 = L.marker([19.3740514, -99.1821186]);
+marker_166.bindPopup("twitt");
+map.addLayer(marker_166)
+
+var marker_167 = L.marker([47.6680246, -122.31304242]);
+marker_167.bindPopup("twitt");
+map.addLayer(marker_167)
+
+var marker_168 = L.marker([-11.9295754, -77.0569573]);
+marker_168.bindPopup("twitt");
+map.addLayer(marker_168)
+
+var marker_169 = L.marker([47.8140755, -3.7888492]);
+marker_169.bindPopup("twitt");
+map.addLayer(marker_169)
+
+var marker_170 = L.marker([41.87551345, 12.49019587]);
+marker_170.bindPopup("twitt");
+map.addLayer(marker_170)
+
+var marker_171 = L.marker([14.6174655, 121.0522235]);
+marker_171.bindPopup("twitt");
+map.addLayer(marker_171)
+
+var marker_172 = L.marker([14.6242183, -90.5414252]);
+marker_172.bindPopup("twitt");
+map.addLayer(marker_172)
+
+var marker_173 = L.marker([13.6827901, -89.20658938]);
+marker_173.bindPopup("twitt");
+map.addLayer(marker_173)
+
+var marker_174 = L.marker([44.5040638, 11.3297843]);
+marker_174.bindPopup("twitt");
+map.addLayer(marker_174)
+
+var marker_175 = L.marker([38.526799, -6.4476905]);
+marker_175.bindPopup("twitt");
+map.addLayer(marker_175)
+
+var marker_176 = L.marker([12.72715315, -86.12264123]);
+marker_176.bindPopup("twitt");
+map.addLayer(marker_176)
+
+var marker_177 = L.marker([-33.8722672, -57.3711761]);
+marker_177.bindPopup("twitt");
+map.addLayer(marker_177)
+
+var marker_178 = L.marker([14.95182514, 120.90227509]);
+marker_178.bindPopup("twitt");
+map.addLayer(marker_178)
+
+var marker_179 = L.marker([45.70764528, 9.49979156]);
+marker_179.bindPopup("twitt");
+map.addLayer(marker_179)
+
+var marker_180 = L.marker([41.89852094, 12.4229738]);
+marker_180.bindPopup("twitt");
+map.addLayer(marker_180)
+
+var marker_181 = L.marker([-11.9295753, -77.0569554]);
+marker_181.bindPopup("twitt");
+map.addLayer(marker_181)
+
+var marker_182 = L.marker([39.30791744, 16.20556198]);
+marker_182.bindPopup("twitt");
+map.addLayer(marker_182)
+
+var marker_183 = L.marker([41.91006592, 12.47585877]);
+marker_183.bindPopup("twitt");
+map.addLayer(marker_183)
+
+var marker_184 = L.marker([-22.57140074, -44.89850158]);
+marker_184.bindPopup("twitt");
+map.addLayer(marker_184)
+
+var marker_185 = L.marker([37.9791186, -121.8361788]);
+marker_185.bindPopup("twitt");
+map.addLayer(marker_185)
+
+var marker_186 = L.marker([6.5171639, 3.3596526]);
+marker_186.bindPopup("twitt");
+map.addLayer(marker_186)
+
+var marker_187 = L.marker([6.5171639, 3.3596526]);
+marker_187.bindPopup("twitt");
+map.addLayer(marker_187)
+
+var marker_188 = L.marker([51.76676298, -0.23162384]);
+marker_188.bindPopup("twitt");
+map.addLayer(marker_188)
+
+var marker_189 = L.marker([42.01011425, -4.52976523]);
+marker_189.bindPopup("twitt");
+map.addLayer(marker_189)
+
+var marker_190 = L.marker([37.17386445, -3.5995369]);
+marker_190.bindPopup("twitt");
+map.addLayer(marker_190)
+
+var marker_191 = L.marker([6.5171639, 3.3596526]);
+marker_191.bindPopup("twitt");
+map.addLayer(marker_191)
+
+var marker_192 = L.marker([13.27148743, 121.24711802]);
+marker_192.bindPopup("twitt");
+map.addLayer(marker_192)
+
+var marker_193 = L.marker([44.2335866, 12.0532362]);
+marker_193.bindPopup("twitt");
+map.addLayer(marker_193)
+
+var marker_194 = L.marker([-11.9295753, -77.0569576]);
+marker_194.bindPopup("twitt");
+map.addLayer(marker_194)
+
+var marker_195 = L.marker([41.90191569, 12.45678051]);
+marker_195.bindPopup("twitt");
+map.addLayer(marker_195)
+
+var marker_196 = L.marker([39.22228091, -0.24756474]);
+marker_196.bindPopup("twitt");
+map.addLayer(marker_196)
+
+var marker_197 = L.marker([18.3927502, -66.0315332]);
+marker_197.bindPopup("twitt");
+map.addLayer(marker_197)
+
+var marker_198 = L.marker([30.31637214, -93.1816788]);
+marker_198.bindPopup("twitt");
+map.addLayer(marker_198)
+
+var marker_199 = L.marker([41.87550732, 12.49018992]);
+marker_199.bindPopup("twitt");
+map.addLayer(marker_199)
+
+var marker_200 = L.marker([41.90157021, 12.49548741]);
+marker_200.bindPopup("twitt");
+map.addLayer(marker_200)
+
+var marker_201 = L.marker([45.70605561, 9.499314]);
+marker_201.bindPopup("twitt");
+map.addLayer(marker_201)
+
+var marker_202 = L.marker([14.6253522, -90.4821394]);
+marker_202.bindPopup("twitt");
+map.addLayer(marker_202)
+
+var marker_203 = L.marker([41.902407, 12.45768908]);
+marker_203.bindPopup("twitt");
+map.addLayer(marker_203)
+
+var marker_204 = L.marker([10.7250067, -71.6213746]);
+marker_204.bindPopup("twitt");
+map.addLayer(marker_204)
+
+var marker_205 = L.marker([14.6253522, -90.4821394]);
+marker_205.bindPopup("twitt");
+map.addLayer(marker_205)
+
+var marker_206 = L.marker([41.90169182, 12.45576976]);
+marker_206.bindPopup("twitt");
+map.addLayer(marker_206)
+
+var marker_207 = L.marker([41.87551045, 12.49019785]);
+marker_207.bindPopup("twitt");
+map.addLayer(marker_207)
+
+var marker_208 = L.marker([14.8502347, -91.5230036]);
+marker_208.bindPopup("twitt");
+map.addLayer(marker_208)
+
+var marker_209 = L.marker([-6.1384081, 106.8422327]);
+marker_209.bindPopup("twitt");
+map.addLayer(marker_209)
+
+var marker_210 = L.marker([6.8641631, 7.4087525]);
+marker_210.bindPopup("twitt");
+map.addLayer(marker_210)
+
+var marker_211 = L.marker([14.6196739, 121.0234998]);
+marker_211.bindPopup("twitt");
+map.addLayer(marker_211)
+
+var marker_212 = L.marker([14.8502347, -91.5230036]);
+marker_212.bindPopup("twitt");
+map.addLayer(marker_212)
+
+var marker_213 = L.marker([39.2223029, -0.2475543]);
+marker_213.bindPopup("twitt");
+map.addLayer(marker_213)
+
+var marker_214 = L.marker([18.3925321, -66.0313245]);
+marker_214.bindPopup("twitt");
+map.addLayer(marker_214)
+
+var marker_215 = L.marker([45.70728389, 9.50044879]);
+marker_215.bindPopup("twitt");
+map.addLayer(marker_215)
+
+var marker_216 = L.marker([14.67070761, 121.02048194]);
+marker_216.bindPopup("twitt");
+map.addLayer(marker_216)
+
+var marker_217 = L.marker([6.5171639, 3.3596526]);
+marker_217.bindPopup("twitt");
+map.addLayer(marker_217)
+
+var marker_218 = L.marker([39.22132567, -0.24801845]);
+marker_218.bindPopup("twitt");
+map.addLayer(marker_218)
+
+var marker_219 = L.marker([41.87546135, 12.49023655]);
+marker_219.bindPopup("twitt");
+map.addLayer(marker_219)
+
+var marker_220 = L.marker([14.6001444, -90.5506786]);
+marker_220.bindPopup("twitt");
+map.addLayer(marker_220)
+
+var marker_221 = L.marker([41.89469028, 12.48958618]);
+marker_221.bindPopup("twitt");
+map.addLayer(marker_221)
+
+var marker_222 = L.marker([40.62782099, 14.38070426]);
+marker_222.bindPopup("twitt");
+map.addLayer(marker_222)
+
+var marker_223 = L.marker([19.3689186, -99.1817791]);
+marker_223.bindPopup("twitt");
+map.addLayer(marker_223)
+
+var marker_224 = L.marker([14.6206083, 121.0530549]);
+marker_224.bindPopup("twitt");
+map.addLayer(marker_224)
+
+var marker_225 = L.marker([41.90810222, 12.45463412]);
+marker_225.bindPopup("twitt");
+map.addLayer(marker_225)
+
+var marker_226 = L.marker([6.6324559, 3.389177]);
+marker_226.bindPopup("twitt");
+map.addLayer(marker_226)
+
+var marker_227 = L.marker([14.8502347, -91.5230036]);
+marker_227.bindPopup("twitt");
+map.addLayer(marker_227)
+
+var marker_228 = L.marker([-22.57139937, -44.89850224]);
+marker_228.bindPopup("twitt");
+map.addLayer(marker_228)
+
+var marker_229 = L.marker([41.90850049, 12.4545025]);
+marker_229.bindPopup("twitt");
+map.addLayer(marker_229)
+
+var marker_230 = L.marker([41.90180352, 12.45554096]);
+marker_230.bindPopup("twitt");
+map.addLayer(marker_230)
+
+var marker_231 = L.marker([14.813975, 121.0648693]);
+marker_231.bindPopup("twitt");
+map.addLayer(marker_231)
+
+var marker_232 = L.marker([41.90200768, 12.48502668]);
+marker_232.bindPopup("twitt");
+map.addLayer(marker_232)
+
+var marker_233 = L.marker([13.27148743, 121.24711802]);
+marker_233.bindPopup("twitt");
+map.addLayer(marker_233)
+
+var marker_234 = L.marker([41.93836155, 12.54364779]);
+marker_234.bindPopup("twitt");
+map.addLayer(marker_234)
+
+var marker_235 = L.marker([13.27148743, 121.24711802]);
+marker_235.bindPopup("twitt");
+map.addLayer(marker_235)
+
+var marker_236 = L.marker([0.3775739, 32.6004898]);
+marker_236.bindPopup("twitt");
+map.addLayer(marker_236)
+
+var marker_237 = L.marker([14.43256277, 121.05054412]);
+marker_237.bindPopup("twitt");
+map.addLayer(marker_237)
+
+var marker_238 = L.marker([0.3619357, 32.6015959]);
+marker_238.bindPopup("twitt");
+map.addLayer(marker_238)
+
+var marker_239 = L.marker([40.5005937, -3.87631139]);
+marker_239.bindPopup("twitt");
+map.addLayer(marker_239)
+
+var marker_240 = L.marker([43.82083357, -79.56838034]);
+marker_240.bindPopup("twitt");
+map.addLayer(marker_240)
+
+var marker_241 = L.marker([40.5005937, -3.87631139]);
+marker_241.bindPopup("twitt");
+map.addLayer(marker_241)
+
+var marker_242 = L.marker([13.27148743, 121.24711802]);
+marker_242.bindPopup("twitt");
+map.addLayer(marker_242)
+
+var marker_243 = L.marker([-11.9295741, -77.056957]);
+marker_243.bindPopup("twitt");
+map.addLayer(marker_243)
+
+var marker_244 = L.marker([15.2278012, 120.62611021]);
+marker_244.bindPopup("twitt");
+map.addLayer(marker_244)
+
+var marker_245 = L.marker([-11.9546005, -77.0517227]);
+marker_245.bindPopup("twitt");
+map.addLayer(marker_245)
+
+var marker_246 = L.marker([-11.9295743, -77.0569569]);
+marker_246.bindPopup("twitt");
+map.addLayer(marker_246)
+
+var marker_247 = L.marker([41.90195866, 12.48496693]);
+marker_247.bindPopup("twitt");
+map.addLayer(marker_247)
+
+var marker_248 = L.marker([30.33517334, -93.27297091]);
+marker_248.bindPopup("twitt");
+map.addLayer(marker_248)
+
+var marker_249 = L.marker([-6.08692961, -35.20888465]);
+marker_249.bindPopup("twitt");
+map.addLayer(marker_249)
+
+var marker_250 = L.marker([41.11978769, 14.79931358]);
+marker_250.bindPopup("twitt");
+map.addLayer(marker_250)
+
+var marker_251 = L.marker([30.33516525, -93.27295625]);
+marker_251.bindPopup("twitt");
+map.addLayer(marker_251)
+
+var marker_252 = L.marker([44.2335975, 12.0531886]);
+marker_252.bindPopup("twitt");
+map.addLayer(marker_252)
+
+var marker_253 = L.marker([47.1970869, 7.607336]);
+marker_253.bindPopup("twitt");
+map.addLayer(marker_253)
+
+var marker_254 = L.marker([41.6218207, 12.4702001]);
+marker_254.bindPopup("twitt");
+map.addLayer(marker_254)
+
+var marker_255 = L.marker([6.8641631, 7.4087525]);
+marker_255.bindPopup("twitt");
+map.addLayer(marker_255)
+
+var marker_256 = L.marker([18.3927621, -66.0314576]);
+marker_256.bindPopup("twitt");
+map.addLayer(marker_256)
+
+var marker_257 = L.marker([46.49061489, 11.34079393]);
+marker_257.bindPopup("twitt");
+map.addLayer(marker_257)
+
+var marker_258 = L.marker([13.4737423, 121.8615361]);
+marker_258.bindPopup("twitt");
+map.addLayer(marker_258)
+
+var marker_259 = L.marker([30.3352619, -93.27278774]);
+marker_259.bindPopup("twitt");
+map.addLayer(marker_259)
+
+var marker_260 = L.marker([40.55855856, -74.42073087]);
+marker_260.bindPopup("twitt");
+map.addLayer(marker_260)
+
+var marker_261 = L.marker([40.96694043, -5.65778877]);
+marker_261.bindPopup("twitt");
+map.addLayer(marker_261)
+
+var marker_262 = L.marker([41.87550786, 12.49020044]);
+marker_262.bindPopup("twitt");
+map.addLayer(marker_262)
+
+var marker_263 = L.marker([41.90857868, 12.4544723]);
+marker_263.bindPopup("twitt");
+map.addLayer(marker_263)
+
+var marker_264 = L.marker([18.3927676, -66.0314556]);
+marker_264.bindPopup("twitt");
+map.addLayer(marker_264)
+
+var marker_265 = L.marker([47.59537368, 2.95705703]);
+marker_265.bindPopup("twitt");
+map.addLayer(marker_265)
+
+var marker_266 = L.marker([41.78580801, 12.39311618]);
+marker_266.bindPopup("twitt");
+map.addLayer(marker_266)
+
+var marker_267 = L.marker([19.336778, -99.1574389]);
+marker_267.bindPopup("twitt");
+map.addLayer(marker_267)
+
+var marker_268 = L.marker([-33.8723015, -57.3711952]);
+marker_268.bindPopup("twitt");
+map.addLayer(marker_268)
+
+var marker_269 = L.marker([14.6253522, -90.4821394]);
+marker_269.bindPopup("twitt");
+map.addLayer(marker_269)
+
+var marker_270 = L.marker([41.9145258, 12.49650845]);
+marker_270.bindPopup("twitt");
+map.addLayer(marker_270)
+
+var marker_271 = L.marker([14.6001444, -90.5506786]);
+marker_271.bindPopup("twitt");
+map.addLayer(marker_271)
+
+var marker_272 = L.marker([14.4752832, 120.8932038]);
+marker_272.bindPopup("twitt");
+map.addLayer(marker_272)
+
+var marker_273 = L.marker([19.5263791, -96.93100249]);
+marker_273.bindPopup("twitt");
+map.addLayer(marker_273)
+
+var marker_274 = L.marker([4.7496332, -74.0628306]);
+marker_274.bindPopup("twitt");
+map.addLayer(marker_274)
+
+var marker_275 = L.marker([38.8991, -77.029]);
+marker_275.bindPopup("twitt");
+map.addLayer(marker_275)
+
+var marker_276 = L.marker([40.4203, -3.7058]);
+marker_276.bindPopup("twitt");
+map.addLayer(marker_276)
+
+var marker_277 = L.marker([47.66798135, -122.31302443]);
+marker_277.bindPopup("twitt");
+map.addLayer(marker_277)
+
+var marker_278 = L.marker([-12.0954529, -76.8840148]);
+marker_278.bindPopup("twitt");
+map.addLayer(marker_278)
+
+var marker_279 = L.marker([41.905365, 12.45562325]);
+marker_279.bindPopup("twitt");
+map.addLayer(marker_279)
+
+var marker_280 = L.marker([6.8641631, 7.4087525]);
+marker_280.bindPopup("twitt");
+map.addLayer(marker_280)
+
+var marker_281 = L.marker([41.89841256, 12.49723189]);
+marker_281.bindPopup("twitt");
+map.addLayer(marker_281)
+
+var marker_282 = L.marker([45.05797254, -122.77651642]);
+marker_282.bindPopup("twitt");
+map.addLayer(marker_282)
+
+var marker_283 = L.marker([-11.9295756, -77.0569552]);
+marker_283.bindPopup("twitt");
+map.addLayer(marker_283)
+
+var marker_284 = L.marker([14.6198936, 121.0537669]);
+marker_284.bindPopup("twitt");
+map.addLayer(marker_284)
+
+var marker_285 = L.marker([18.3927681, -66.0314094]);
+marker_285.bindPopup("twitt");
+map.addLayer(marker_285)
+
+var marker_286 = L.marker([42.80929692, -1.65419127]);
+marker_286.bindPopup("twitt");
+map.addLayer(marker_286)
+
+var marker_287 = L.marker([44.74101475, -0.68180701]);
+marker_287.bindPopup("twitt");
+map.addLayer(marker_287)
+
+var marker_288 = L.marker([14.8502347, -91.5230036]);
+marker_288.bindPopup("twitt");
+map.addLayer(marker_288)
+
+var marker_289 = L.marker([51.7537929, -1.2558832]);
+marker_289.bindPopup("twitt");
+map.addLayer(marker_289)
+
+var marker_290 = L.marker([42.10555281, -80.14729243]);
+marker_290.bindPopup("twitt");
+map.addLayer(marker_290)
+
+var marker_291 = L.marker([44.43196027, 8.89284287]);
+marker_291.bindPopup("twitt");
+map.addLayer(marker_291)
+
+var marker_292 = L.marker([19.52646981, -96.93096144]);
+marker_292.bindPopup("twitt");
+map.addLayer(marker_292)
+
+var marker_293 = L.marker([39.22910512, -0.24901104]);
+marker_293.bindPopup("twitt");
+map.addLayer(marker_293)
+
+var marker_294 = L.marker([41.90792336, 12.45472013]);
+marker_294.bindPopup("twitt");
+map.addLayer(marker_294)
+
+var marker_295 = L.marker([-11.9295744, -77.0569568]);
+marker_295.bindPopup("twitt");
+map.addLayer(marker_295)
+
+var marker_296 = L.marker([48.8827514, 2.31919204]);
+marker_296.bindPopup("twitt");
+map.addLayer(marker_296)
+
+var marker_297 = L.marker([44.7767872, 7.3929805]);
+marker_297.bindPopup("twitt");
+map.addLayer(marker_297)
+
+var marker_298 = L.marker([-22.5966913, -43.1917312]);
+marker_298.bindPopup("twitt");
+map.addLayer(marker_298)
+
+var marker_299 = L.marker([14.73039, 121.1503812]);
+marker_299.bindPopup("twitt");
+map.addLayer(marker_299)
+
+var marker_300 = L.marker([-11.9295755, -77.0569574]);
+marker_300.bindPopup("twitt");
+map.addLayer(marker_300)
+
+var marker_301 = L.marker([14.6001444, -90.5506786]);
+marker_301.bindPopup("twitt");
+map.addLayer(marker_301)
+
+var marker_302 = L.marker([41.9023679, 12.45864975]);
+marker_302.bindPopup("twitt");
+map.addLayer(marker_302)
+
+var marker_303 = L.marker([9.8722613, -83.9219059]);
+marker_303.bindPopup("twitt");
+map.addLayer(marker_303)
+
+var marker_304 = L.marker([41.87550956, 12.49019806]);
+marker_304.bindPopup("twitt");
+map.addLayer(marker_304)
+
+var marker_305 = L.marker([44.63458277, 10.94536467]);
+marker_305.bindPopup("twitt");
+map.addLayer(marker_305)
+
+var marker_306 = L.marker([37.9790206, -121.8364187]);
+marker_306.bindPopup("twitt");
+map.addLayer(marker_306)
+
+var marker_307 = L.marker([41.90126714, 12.45835117]);
+marker_307.bindPopup("twitt");
+map.addLayer(marker_307)
+
+var marker_308 = L.marker([40.55855856, -74.42073087]);
+marker_308.bindPopup("twitt");
+map.addLayer(marker_308)
+
+var marker_309 = L.marker([40.7496173, -73.9132164]);
+marker_309.bindPopup("twitt");
+map.addLayer(marker_309)
+
+var marker_310 = L.marker([29.90902732, -95.32368329]);
+marker_310.bindPopup("twitt");
+map.addLayer(marker_310)
+
+var marker_311 = L.marker([18.3925891, -66.0317938]);
+marker_311.bindPopup("twitt");
+map.addLayer(marker_311)
+
+var marker_312 = L.marker([6.2653675, -75.5935381]);
+marker_312.bindPopup("twitt");
+map.addLayer(marker_312)
+
+var marker_313 = L.marker([44.63474805, 10.94517682]);
+marker_313.bindPopup("twitt");
+map.addLayer(marker_313)
+
+var marker_314 = L.marker([-32.9013521, -68.8583755]);
+marker_314.bindPopup("twitt");
+map.addLayer(marker_314)
+
+var marker_315 = L.marker([41.90152599, 12.45714331]);
+marker_315.bindPopup("twitt");
+map.addLayer(marker_315)
+
+var marker_316 = L.marker([13.56766697, -89.037698]);
+marker_316.bindPopup("twitt");
+map.addLayer(marker_316)
+
+var marker_317 = L.marker([-22.5967279, -43.1917653]);
+marker_317.bindPopup("twitt");
+map.addLayer(marker_317)
+
+var marker_318 = L.marker([41.87551013, 12.49019738]);
+marker_318.bindPopup("twitt");
+map.addLayer(marker_318)
+
+var marker_319 = L.marker([38.94181313, -78.13103887]);
+marker_319.bindPopup("twitt");
+map.addLayer(marker_319)
+
+var marker_320 = L.marker([47.66808869, -122.3129056]);
+marker_320.bindPopup("twitt");
+map.addLayer(marker_320)
+
+var marker_321 = L.marker([14.62095786, 121.05309782]);
+marker_321.bindPopup("twitt");
+map.addLayer(marker_321)
+
+var marker_322 = L.marker([14.6779535, 121.0615301]);
+marker_322.bindPopup("twitt");
+map.addLayer(marker_322)
+
+var marker_323 = L.marker([14.62715894, 121.09681249]);
+marker_323.bindPopup("twitt");
+map.addLayer(marker_323)
+
+var marker_324 = L.marker([30.33512339, -93.27304674]);
+marker_324.bindPopup("twitt");
+map.addLayer(marker_324)
+
+var marker_325 = L.marker([6.8641631, 7.4087525]);
+marker_325.bindPopup("twitt");
+map.addLayer(marker_325)
+
+var marker_326 = L.marker([-22.57140109, -44.89850153]);
+marker_326.bindPopup("twitt");
+map.addLayer(marker_326)
+
+var marker_327 = L.marker([41.82264962, 12.39364998]);
+marker_327.bindPopup("twitt");
+map.addLayer(marker_327)
+
+var marker_328 = L.marker([30.33521994, -93.27301693]);
+marker_328.bindPopup("twitt");
+map.addLayer(marker_328)
+
+var marker_329 = L.marker([6.68522852, -1.57666732]);
+marker_329.bindPopup("twitt");
+map.addLayer(marker_329)
+
+var marker_330 = L.marker([30.33521914, -93.27301375]);
+marker_330.bindPopup("twitt");
+map.addLayer(marker_330)
+
+var marker_331 = L.marker([40.48446378, -3.34911559]);
+marker_331.bindPopup("twitt");
+map.addLayer(marker_331)
+
+var marker_332 = L.marker([37.3826, -5.99629]);
+marker_332.bindPopup("twitt");
+map.addLayer(marker_332)
+
+var marker_333 = L.marker([-11.9295808, -77.0569597]);
+marker_333.bindPopup("twitt");
+map.addLayer(marker_333)
+
+var marker_334 = L.marker([6.8641631, 7.4087525]);
+marker_334.bindPopup("twitt");
+map.addLayer(marker_334)
+
+var marker_335 = L.marker([47.66806575, -122.31305946]);
+marker_335.bindPopup("twitt");
+map.addLayer(marker_335)
+
+var marker_336 = L.marker([14.62055556, 121.05333333]);
+marker_336.bindPopup("twitt");
+map.addLayer(marker_336)
+
+var marker_337 = L.marker([40.5005937, -3.87631139]);
+marker_337.bindPopup("twitt");
+map.addLayer(marker_337)
+
+var marker_338 = L.marker([47.66811598, -122.31287769]);
+marker_338.bindPopup("twitt");
+map.addLayer(marker_338)
+
+var marker_339 = L.marker([47.6181744, -122.3472621]);
+marker_339.bindPopup("twitt");
+map.addLayer(marker_339)
+
+var marker_340 = L.marker([41.89278979, 12.48682022]);
+marker_340.bindPopup("twitt");
+map.addLayer(marker_340)
+
+var marker_341 = L.marker([19.3859874, -99.0009048]);
+marker_341.bindPopup("twitt");
+map.addLayer(marker_341)
+
+var marker_342 = L.marker([41.87550833, 12.49019923]);
+marker_342.bindPopup("twitt");
+map.addLayer(marker_342)
+
+var marker_343 = L.marker([4.587203, -74.168174]);
+marker_343.bindPopup("twitt");
+map.addLayer(marker_343)
+
+var marker_344 = L.marker([41.90172821, 12.45577582]);
+marker_344.bindPopup("twitt");
+map.addLayer(marker_344)
+
+var marker_345 = L.marker([41.08219633, 14.24316722]);
+marker_345.bindPopup("twitt");
+map.addLayer(marker_345)
+
+var marker_346 = L.marker([6.8641631, 7.4087525]);
+marker_346.bindPopup("twitt");
+map.addLayer(marker_346)
+
+var marker_347 = L.marker([19.3859707, -99.000868]);
+marker_347.bindPopup("twitt");
+map.addLayer(marker_347)
+
+var marker_348 = L.marker([47.66812733, -122.31290569]);
+marker_348.bindPopup("twitt");
+map.addLayer(marker_348)
+
+var marker_349 = L.marker([60.90569623, 17.02206963]);
+marker_349.bindPopup("twitt");
+map.addLayer(marker_349)
+
+var marker_350 = L.marker([40.48447268, -3.3491285]);
+marker_350.bindPopup("twitt");
+map.addLayer(marker_350)
+
+var marker_351 = L.marker([49.49348979, 8.45926888]);
+marker_351.bindPopup("twitt");
+map.addLayer(marker_351)
+
+var marker_352 = L.marker([41.82266225, 12.39356709]);
+marker_352.bindPopup("twitt");
+map.addLayer(marker_352)
+
+var marker_353 = L.marker([48.85306443, 2.3776937]);
+marker_353.bindPopup("twitt");
+map.addLayer(marker_353)
+
+var marker_354 = L.marker([41.08219633, 14.24316722]);
+marker_354.bindPopup("twitt");
+map.addLayer(marker_354)
+
+var marker_355 = L.marker([41.87551136, 12.49019679]);
+marker_355.bindPopup("twitt");
+map.addLayer(marker_355)
+
+var marker_356 = L.marker([40.85370618, -73.91213307]);
+marker_356.bindPopup("twitt");
+map.addLayer(marker_356)
+
+var marker_357 = L.marker([45.18580488, 9.16204238]);
+marker_357.bindPopup("twitt");
+map.addLayer(marker_357)
+
+var marker_358 = L.marker([6.8641631, 7.4087525]);
+marker_358.bindPopup("twitt");
+map.addLayer(marker_358)
+
+var marker_359 = L.marker([-32.9322801, -60.720083]);
+marker_359.bindPopup("twitt");
+map.addLayer(marker_359)
+
+var marker_360 = L.marker([53.53854164, -113.45835103]);
+marker_360.bindPopup("twitt");
+map.addLayer(marker_360)
+
+var marker_361 = L.marker([-11.9295758, -77.0569579]);
+marker_361.bindPopup("twitt");
+map.addLayer(marker_361)
+
+var marker_362 = L.marker([41.90192813, 12.45676677]);
+marker_362.bindPopup("twitt");
+map.addLayer(marker_362)
+
+var marker_363 = L.marker([14.53662502, 120.9845648]);
+marker_363.bindPopup("twitt");
+map.addLayer(marker_363)
+
+var marker_364 = L.marker([51.1929591, 6.4482754]);
+marker_364.bindPopup("twitt");
+map.addLayer(marker_364)
+
+var marker_365 = L.marker([-18.876753, -41.9700909]);
+marker_365.bindPopup("twitt");
+map.addLayer(marker_365)
+
+var marker_366 = L.marker([-22.6588003, -44.9992484]);
+marker_366.bindPopup("twitt");
+map.addLayer(marker_366)
+
+var marker_367 = L.marker([41.893396, 12.483301]);
+marker_367.bindPopup("twitt");
+map.addLayer(marker_367)
+
+var marker_368 = L.marker([53.7097992, -6.321328]);
+marker_368.bindPopup("twitt");
+map.addLayer(marker_368)
+
+var marker_369 = L.marker([43.04363073, -87.91477024]);
+marker_369.bindPopup("twitt");
+map.addLayer(marker_369)
+
+var marker_370 = L.marker([48.15418429, 11.60563667]);
+marker_370.bindPopup("twitt");
+map.addLayer(marker_370)
+
+var marker_371 = L.marker([14.63975504, 121.03726989]);
+marker_371.bindPopup("twitt");
+map.addLayer(marker_371)
+
+var marker_372 = L.marker([-6.8773019, -38.564651]);
+marker_372.bindPopup("twitt");
+map.addLayer(marker_372)
+
+var marker_373 = L.marker([43.04367441, -87.91485059]);
+marker_373.bindPopup("twitt");
+map.addLayer(marker_373)
+
+var marker_374 = L.marker([47.66802595, -122.31307056]);
+marker_374.bindPopup("twitt");
+map.addLayer(marker_374)
+
+var marker_375 = L.marker([45.45481375, 9.18504758]);
+marker_375.bindPopup("twitt");
+map.addLayer(marker_375)
+
+var marker_376 = L.marker([41.87549588, 12.49021121]);
+marker_376.bindPopup("twitt");
+map.addLayer(marker_376)
+
+var marker_377 = L.marker([-12.0952647, -76.8841353]);
+marker_377.bindPopup("twitt");
+map.addLayer(marker_377)
+
+var marker_378 = L.marker([43.27600944, 5.36668181]);
+marker_378.bindPopup("twitt");
+map.addLayer(marker_378)
+
+var marker_379 = L.marker([41.92576419, 12.43534688]);
+marker_379.bindPopup("twitt");
+map.addLayer(marker_379)
+
+var marker_380 = L.marker([-6.8772037, -38.5645812]);
+marker_380.bindPopup("twitt");
+map.addLayer(marker_380)
+
+var marker_381 = L.marker([41.9023679, 12.45864975]);
+marker_381.bindPopup("twitt");
+map.addLayer(marker_381)
+
+var marker_382 = L.marker([43.76642198, 11.27385919]);
+marker_382.bindPopup("twitt");
+map.addLayer(marker_382)
+
+var marker_383 = L.marker([41.90239421, 12.45922416]);
+marker_383.bindPopup("twitt");
+map.addLayer(marker_383)
+
+var marker_384 = L.marker([51.47113309, -0.20809039]);
+marker_384.bindPopup("twitt");
+map.addLayer(marker_384)
+
+var marker_385 = L.marker([18.3927761, -66.0314859]);
+marker_385.bindPopup("twitt");
+map.addLayer(marker_385)
+
+var marker_386 = L.marker([41.2227476, 16.2936791]);
+marker_386.bindPopup("twitt");
+map.addLayer(marker_386)
+
+var marker_387 = L.marker([41.87550912, 12.49019798]);
+marker_387.bindPopup("twitt");
+map.addLayer(marker_387)
+
+var marker_388 = L.marker([39.43357816, 3.01269709]);
+marker_388.bindPopup("twitt");
+map.addLayer(marker_388)
+
+var marker_389 = L.marker([42.3121374, -71.1346417]);
+marker_389.bindPopup("twitt");
+map.addLayer(marker_389)
+
+var marker_390 = L.marker([51.54966135, 0.64953363]);
+marker_390.bindPopup("twitt");
+map.addLayer(marker_390)
+
+var marker_391 = L.marker([45.6354387, 9.00144446]);
+marker_391.bindPopup("twitt");
+map.addLayer(marker_391)
+
+var marker_392 = L.marker([42.3123597, -71.1313723]);
+marker_392.bindPopup("twitt");
+map.addLayer(marker_392)
+
+var marker_393 = L.marker([43.3779634, 10.8289645]);
+marker_393.bindPopup("twitt");
+map.addLayer(marker_393)
+
+var marker_394 = L.marker([18.3927742, -66.0314655]);
+marker_394.bindPopup("twitt");
+map.addLayer(marker_394)
+
+var marker_395 = L.marker([45.82861747, 9.04656846]);
+marker_395.bindPopup("twitt");
+map.addLayer(marker_395)
+
+var marker_396 = L.marker([51.54952549, 0.64929859]);
+marker_396.bindPopup("twitt");
+map.addLayer(marker_396)
+
+var marker_397 = L.marker([41.87551263, 12.49019687]);
+marker_397.bindPopup("twitt");
+map.addLayer(marker_397)
+
+var marker_398 = L.marker([18.3931053, -66.0333956]);
+marker_398.bindPopup("twitt");
+map.addLayer(marker_398)
+
+var marker_399 = L.marker([14.62124, 121.05401]);
+marker_399.bindPopup("twitt");
+map.addLayer(marker_399)
+
+var marker_400 = L.marker([-11.9545894, -77.0517231]);
+marker_400.bindPopup("twitt");
+map.addLayer(marker_400)
+
+var marker_401 = L.marker([45.70497468, 9.49756223]);
+marker_401.bindPopup("twitt");
+map.addLayer(marker_401)
+
+var marker_402 = L.marker([37.398009, -5.9738074]);
+marker_402.bindPopup("twitt");
+map.addLayer(marker_402)
+
+var marker_403 = L.marker([9.0967758, -79.3490063]);
+marker_403.bindPopup("twitt");
+map.addLayer(marker_403)
+
+var marker_404 = L.marker([41.90206197, 12.45825718]);
+marker_404.bindPopup("twitt");
+map.addLayer(marker_404)
+
+var marker_405 = L.marker([-22.66162117, -45.00487363]);
+marker_405.bindPopup("twitt");
+map.addLayer(marker_405)
+
+var marker_406 = L.marker([19.3859498, -99.0009389]);
+marker_406.bindPopup("twitt");
+map.addLayer(marker_406)
+
+var marker_407 = L.marker([-1.44141726, -48.46228123]);
+marker_407.bindPopup("twitt");
+map.addLayer(marker_407)
+
+var marker_408 = L.marker([43.3340436, 10.7292276]);
+marker_408.bindPopup("twitt");
+map.addLayer(marker_408)
+
+var marker_409 = L.marker([41.90190601, 12.45671343]);
+marker_409.bindPopup("twitt");
+map.addLayer(marker_409)
+
+var marker_410 = L.marker([43.3340496, 10.7292139]);
+marker_410.bindPopup("twitt");
+map.addLayer(marker_410)
+
+var marker_411 = L.marker([41.90253122, 12.45732938]);
+marker_411.bindPopup("twitt");
+map.addLayer(marker_411)
+
+var marker_412 = L.marker([34.2690717, -118.3120931]);
+marker_412.bindPopup("twitt");
+map.addLayer(marker_412)
+
+var marker_413 = L.marker([41.90253122, 12.45732938]);
+marker_413.bindPopup("twitt");
+map.addLayer(marker_413)
+
+var marker_414 = L.marker([41.901393, 12.455374]);
+marker_414.bindPopup("twitt");
+map.addLayer(marker_414)
+
+var marker_415 = L.marker([14.7402855, 121.1493666]);
+marker_415.bindPopup("twitt");
+map.addLayer(marker_415)
+
+var marker_416 = L.marker([18.5021, -69.93477]);
+marker_416.bindPopup("twitt");
+map.addLayer(marker_416)
+
+var marker_417 = L.marker([-18.8767535, -41.9700908]);
+marker_417.bindPopup("twitt");
+map.addLayer(marker_417)
+
+var marker_418 = L.marker([40.4429836, -3.6695763]);
+marker_418.bindPopup("twitt");
+map.addLayer(marker_418)
+
+var marker_419 = L.marker([-13.7331275, -76.2214826]);
+marker_419.bindPopup("twitt");
+map.addLayer(marker_419)
+
+var marker_420 = L.marker([14.4022982, 121.03346714]);
+marker_420.bindPopup("twitt");
+map.addLayer(marker_420)
+
+var marker_421 = L.marker([40.5005937, -3.87631139]);
+marker_421.bindPopup("twitt");
+map.addLayer(marker_421)
+
+var marker_422 = L.marker([42.3121374, -71.1346417]);
+marker_422.bindPopup("twitt");
+map.addLayer(marker_422)
+
+var marker_423 = L.marker([41.8174936, 12.48523857]);
+marker_423.bindPopup("twitt");
+map.addLayer(marker_423)
+
+var marker_424 = L.marker([-13.7331275, -76.2214826]);
+marker_424.bindPopup("twitt");
+map.addLayer(marker_424)
+
+var marker_425 = L.marker([-12.0952647, -76.8841353]);
+marker_425.bindPopup("twitt");
+map.addLayer(marker_425)
+
+var marker_426 = L.marker([41.88822252, 12.52640752]);
+marker_426.bindPopup("twitt");
+map.addLayer(marker_426)
+
+var marker_427 = L.marker([41.90253122, 12.45732938]);
+marker_427.bindPopup("twitt");
+map.addLayer(marker_427)
+
+var marker_428 = L.marker([39.23004416, -0.25004513]);
+marker_428.bindPopup("twitt");
+map.addLayer(marker_428)
+
+var marker_429 = L.marker([40.5058524, -3.670685]);
+marker_429.bindPopup("twitt");
+map.addLayer(marker_429)
+
+var marker_430 = L.marker([41.71343213, -86.17688938]);
+marker_430.bindPopup("twitt");
+map.addLayer(marker_430)
+
+var marker_431 = L.marker([42.3124869, -71.1409705]);
+marker_431.bindPopup("twitt");
+map.addLayer(marker_431)
+
+var marker_432 = L.marker([47.66800377, -122.31302492]);
+marker_432.bindPopup("twitt");
+map.addLayer(marker_432)
+
+var marker_433 = L.marker([41.902172, 12.456753]);
+marker_433.bindPopup("twitt");
+map.addLayer(marker_433)
+
+var marker_434 = L.marker([53.6677701, -1.79300027]);
+marker_434.bindPopup("twitt");
+map.addLayer(marker_434)
+
+var marker_435 = L.marker([42.3124869, -71.1409705]);
+marker_435.bindPopup("twitt");
+map.addLayer(marker_435)
+
+var marker_436 = L.marker([41.89104249, 12.47447216]);
+marker_436.bindPopup("twitt");
+map.addLayer(marker_436)
+
+var marker_437 = L.marker([40.44476564, -3.70142032]);
+marker_437.bindPopup("twitt");
+map.addLayer(marker_437)
+
+var marker_438 = L.marker([14.62137, 121.05389]);
+marker_438.bindPopup("twitt");
+map.addLayer(marker_438)
+
+var marker_439 = L.marker([42.3124869, -71.1409705]);
+marker_439.bindPopup("twitt");
+map.addLayer(marker_439)
+
+var marker_440 = L.marker([21.93355373, -102.31076569]);
+marker_440.bindPopup("twitt");
+map.addLayer(marker_440)
+
+var marker_441 = L.marker([15.24878263, 120.56176468]);
+marker_441.bindPopup("twitt");
+map.addLayer(marker_441)
+
+var marker_442 = L.marker([41.49184722, -73.97320795]);
+marker_442.bindPopup("twitt");
+map.addLayer(marker_442)
+
+var marker_443 = L.marker([14.20803297, 121.02183554]);
+marker_443.bindPopup("twitt");
+map.addLayer(marker_443)
+
+var marker_444 = L.marker([42.3116926, -71.1411804]);
+marker_444.bindPopup("twitt");
+map.addLayer(marker_444)
+
+var marker_445 = L.marker([41.06316412, -73.67313363]);
+marker_445.bindPopup("twitt");
+map.addLayer(marker_445)
+
+var marker_446 = L.marker([40.4484271, -3.6734561]);
+marker_446.bindPopup("twitt");
+map.addLayer(marker_446)
+
+var marker_447 = L.marker([18.3930472, -66.0332031]);
+marker_447.bindPopup("twitt");
+map.addLayer(marker_447)
+
+var marker_448 = L.marker([41.8263804, 12.5874391]);
+marker_448.bindPopup("twitt");
+map.addLayer(marker_448)
+
+var marker_449 = L.marker([14.29062714, 120.94011296]);
+marker_449.bindPopup("twitt");
+map.addLayer(marker_449)
+
+var marker_450 = L.marker([44.91101884, 8.60740531]);
+marker_450.bindPopup("twitt");
+map.addLayer(marker_450)
+
+var marker_451 = L.marker([45.47598581, 9.26689961]);
+marker_451.bindPopup("twitt");
+map.addLayer(marker_451)
+
+var marker_452 = L.marker([41.89833415, 12.49762768]);
+marker_452.bindPopup("twitt");
+map.addLayer(marker_452)
+
+var marker_453 = L.marker([43.3270603, 11.3322226]);
+marker_453.bindPopup("twitt");
+map.addLayer(marker_453)
+
+var marker_454 = L.marker([45.69975827, 9.30880458]);
+marker_454.bindPopup("twitt");
+map.addLayer(marker_454)
+
+var marker_455 = L.marker([10.1594189, -67.9675334]);
+marker_455.bindPopup("twitt");
+map.addLayer(marker_455)
+
+var marker_456 = L.marker([38.25111147, -0.51731826]);
+marker_456.bindPopup("twitt");
+map.addLayer(marker_456)
+
+var marker_457 = L.marker([51.95247203, 7.61218253]);
+marker_457.bindPopup("twitt");
+map.addLayer(marker_457)
+
+var marker_458 = L.marker([19.38594, -99.0009235]);
+marker_458.bindPopup("twitt");
+map.addLayer(marker_458)
+
+var marker_459 = L.marker([43.4394303, 10.8517346]);
+marker_459.bindPopup("twitt");
+map.addLayer(marker_459)
+
+var marker_460 = L.marker([40.44579526, -3.78430794]);
+marker_460.bindPopup("twitt");
+map.addLayer(marker_460)
+
+var marker_461 = L.marker([42.61092883, -5.56585007]);
+marker_461.bindPopup("twitt");
+map.addLayer(marker_461)
+
+var marker_462 = L.marker([48.82948378, 2.23962509]);
+marker_462.bindPopup("twitt");
+map.addLayer(marker_462)
+
+var marker_463 = L.marker([41.9001987, 12.45871195]);
+marker_463.bindPopup("twitt");
+map.addLayer(marker_463)
+
+var marker_464 = L.marker([10.72257997, -61.47713327]);
+marker_464.bindPopup("twitt");
+map.addLayer(marker_464)
+
+var marker_465 = L.marker([39.51651853, 15.94151558]);
+marker_465.bindPopup("twitt");
+map.addLayer(marker_465)
+
+var marker_466 = L.marker([40.45275504, -3.6781232]);
+marker_466.bindPopup("twitt");
+map.addLayer(marker_466)
+
+var marker_467 = L.marker([44.0772176, 11.7411476]);
+marker_467.bindPopup("twitt");
+map.addLayer(marker_467)
+
+var marker_468 = L.marker([45.45544228, 9.18425665]);
+marker_468.bindPopup("twitt");
+map.addLayer(marker_468)
+
+var marker_469 = L.marker([37.6061443, -0.9867959]);
+marker_469.bindPopup("twitt");
+map.addLayer(marker_469)
+
+var marker_470 = L.marker([41.83959713, 12.50889403]);
+marker_470.bindPopup("twitt");
+map.addLayer(marker_470)
+
+var marker_471 = L.marker([-11.9545894, -77.0517231]);
+marker_471.bindPopup("twitt");
+map.addLayer(marker_471)
+
+var marker_472 = L.marker([41.8755099, 12.4901971]);
+marker_472.bindPopup("twitt");
+map.addLayer(marker_472)
+
+var marker_473 = L.marker([39.51651853, 15.94151558]);
+marker_473.bindPopup("twitt");
+map.addLayer(marker_473)
+
+var marker_474 = L.marker([18.3930146, -66.0327765]);
+marker_474.bindPopup("twitt");
+map.addLayer(marker_474)
+
+var marker_475 = L.marker([14.57125, 121.03995]);
+marker_475.bindPopup("twitt");
+map.addLayer(marker_475)
+
+var marker_476 = L.marker([-22.65898659, -44.99792487]);
+marker_476.bindPopup("twitt");
+map.addLayer(marker_476)
+
+var marker_477 = L.marker([44.811185, 7.3701156]);
+marker_477.bindPopup("twitt");
+map.addLayer(marker_477)
+
+var marker_478 = L.marker([19.385974, -99.0008663]);
+marker_478.bindPopup("twitt");
+map.addLayer(marker_478)
+
+var marker_479 = L.marker([42.3124869, -71.1409705]);
+marker_479.bindPopup("twitt");
+map.addLayer(marker_479)
+
+var marker_480 = L.marker([39.22836126, -0.25024153]);
+marker_480.bindPopup("twitt");
+map.addLayer(marker_480)
+
+var marker_481 = L.marker([41.83998602, 12.50918727]);
+marker_481.bindPopup("twitt");
+map.addLayer(marker_481)
+
+var marker_482 = L.marker([41.9022779, 12.4599335]);
+marker_482.bindPopup("twitt");
+map.addLayer(marker_482)
+
+var marker_483 = L.marker([14.73039, 121.1503812]);
+marker_483.bindPopup("twitt");
+map.addLayer(marker_483)
+
+var marker_484 = L.marker([-2.3104649, -79.7310359]);
+marker_484.bindPopup("twitt");
+map.addLayer(marker_484)
+
+var marker_485 = L.marker([47.66817356, -122.31255583]);
+marker_485.bindPopup("twitt");
+map.addLayer(marker_485)
+
+var marker_486 = L.marker([48.97747632, 2.0507644]);
+marker_486.bindPopup("twitt");
+map.addLayer(marker_486)
+
+var marker_487 = L.marker([39.90964335, -4.01428794]);
+marker_487.bindPopup("twitt");
+map.addLayer(marker_487)
+
+var marker_488 = L.marker([19.3712944, -99.1813576]);
+marker_488.bindPopup("twitt");
+map.addLayer(marker_488)
+
+var marker_489 = L.marker([14.7563426, 121.0325782]);
+marker_489.bindPopup("twitt");
+map.addLayer(marker_489)
+
+var marker_490 = L.marker([41.87548863, 12.49019784]);
+marker_490.bindPopup("twitt");
+map.addLayer(marker_490)
+
+var marker_491 = L.marker([-34.5534733, -58.591308]);
+marker_491.bindPopup("twitt");
+map.addLayer(marker_491)
+
+var marker_492 = L.marker([41.89935134, 12.47599312]);
+marker_492.bindPopup("twitt");
+map.addLayer(marker_492)
+
+var marker_493 = L.marker([41.7667435, -2.4689501]);
+marker_493.bindPopup("twitt");
+map.addLayer(marker_493)
+
+var marker_494 = L.marker([45.64309158, 12.51222072]);
+marker_494.bindPopup("twitt");
+map.addLayer(marker_494)
+
+var marker_495 = L.marker([45.4602303, 8.7174821]);
+marker_495.bindPopup("twitt");
+map.addLayer(marker_495)
+
+var marker_496 = L.marker([41.87551073, 12.49019873]);
+marker_496.bindPopup("twitt");
+map.addLayer(marker_496)
+
+var marker_497 = L.marker([53.7097997, -6.3213269]);
+marker_497.bindPopup("twitt");
+map.addLayer(marker_497)
+
+var marker_498 = L.marker([-12.0952647, -76.8841353]);
+marker_498.bindPopup("twitt");
+map.addLayer(marker_498)
+
+var marker_499 = L.marker([41.76662317, -2.46890518]);
+marker_499.bindPopup("twitt");
+map.addLayer(marker_499)
+
+var marker_500 = L.marker([41.89942972, 12.45961312]);
+marker_500.bindPopup("twitt");
+map.addLayer(marker_500)
+
+var marker_501 = L.marker([47.66798626, -122.31305035]);
+marker_501.bindPopup("twitt");
+map.addLayer(marker_501)
+
+var marker_502 = L.marker([4.5872068, -74.1681211]);
+marker_502.bindPopup("twitt");
+map.addLayer(marker_502)
+
+var marker_503 = L.marker([19.3859807, -99.000902]);
+marker_503.bindPopup("twitt");
+map.addLayer(marker_503)
+
+var marker_504 = L.marker([41.99811558, 14.98365345]);
+marker_504.bindPopup("twitt");
+map.addLayer(marker_504)
+
+var marker_505 = L.marker([41.87551338, 12.49019555]);
+marker_505.bindPopup("twitt");
+map.addLayer(marker_505)
+
+var marker_506 = L.marker([-23.41425863, -51.45425133]);
+marker_506.bindPopup("twitt");
+map.addLayer(marker_506)
+
+var marker_507 = L.marker([45.4518565, 9.0807376]);
+marker_507.bindPopup("twitt");
+map.addLayer(marker_507)
+
+var marker_508 = L.marker([-32.9322812, -60.7200834]);
+marker_508.bindPopup("twitt");
+map.addLayer(marker_508)
+
+var marker_509 = L.marker([41.87551349, 12.49019672]);
+marker_509.bindPopup("twitt");
+map.addLayer(marker_509)
+
+var marker_510 = L.marker([-27.5257204, 153.0626783]);
+marker_510.bindPopup("twitt");
+map.addLayer(marker_510)
+
+var marker_511 = L.marker([41.90209678, 12.45698534]);
+marker_511.bindPopup("twitt");
+map.addLayer(marker_511)
+
+var marker_512 = L.marker([5.55856, -0.20092]);
+marker_512.bindPopup("twitt");
+map.addLayer(marker_512)
+
+var marker_513 = L.marker([6.3977252, 5.6123645]);
+marker_513.bindPopup("twitt");
+map.addLayer(marker_513)
+
+var marker_514 = L.marker([41.87547919, 12.49023344]);
+marker_514.bindPopup("twitt");
+map.addLayer(marker_514)
+
+var marker_515 = L.marker([41.9154574, 12.4566278]);
+marker_515.bindPopup("twitt");
+map.addLayer(marker_515)
+
+var marker_516 = L.marker([39.1292993, -0.2902845]);
+marker_516.bindPopup("twitt");
+map.addLayer(marker_516)
+
+var marker_517 = L.marker([41.90118, 12.455505]);
+marker_517.bindPopup("twitt");
+map.addLayer(marker_517)
+
+var marker_518 = L.marker([4.5872032, -74.1681225]);
+marker_518.bindPopup("twitt");
+map.addLayer(marker_518)
+
+var marker_519 = L.marker([43.3865476, 10.8666562]);
+marker_519.bindPopup("twitt");
+map.addLayer(marker_519)
+
+var marker_520 = L.marker([-23.73469725, -46.58349515]);
+marker_520.bindPopup("twitt");
+map.addLayer(marker_520)
+
+var marker_521 = L.marker([6.8641631, 7.4087525]);
+marker_521.bindPopup("twitt");
+map.addLayer(marker_521)
+
+var marker_522 = L.marker([4.5872654, -74.1682044]);
+marker_522.bindPopup("twitt");
+map.addLayer(marker_522)
+
+var marker_523 = L.marker([14.4038323, 121.033091]);
+marker_523.bindPopup("twitt");
+map.addLayer(marker_523)
+
+var marker_524 = L.marker([43.3779634, 10.8289645]);
+marker_524.bindPopup("twitt");
+map.addLayer(marker_524)
+
+var marker_525 = L.marker([14.3349591, 121.063377]);
+marker_525.bindPopup("twitt");
+map.addLayer(marker_525)
+
+var marker_526 = L.marker([41.83961792, 12.50881745]);
+marker_526.bindPopup("twitt");
+map.addLayer(marker_526)
+
+var marker_527 = L.marker([41.89822154, 12.47320223]);
+marker_527.bindPopup("twitt");
+map.addLayer(marker_527)
+
+var marker_528 = L.marker([-12.0952647, -76.8841353]);
+marker_528.bindPopup("twitt");
+map.addLayer(marker_528)
+
+var marker_529 = L.marker([46.6004312, 5.4785084]);
+marker_529.bindPopup("twitt");
+map.addLayer(marker_529)
+
+var marker_530 = L.marker([41.91096977, 12.41852427]);
+marker_530.bindPopup("twitt");
+map.addLayer(marker_530)
+
+var marker_531 = L.marker([6.8641631, 7.4087525]);
+marker_531.bindPopup("twitt");
+map.addLayer(marker_531)
+
+var marker_532 = L.marker([-9.6501534, -35.71087569]);
+marker_532.bindPopup("twitt");
+map.addLayer(marker_532)
+
+var marker_533 = L.marker([-21.74963177, -41.33143453]);
+marker_533.bindPopup("twitt");
+map.addLayer(marker_533)
+
+var marker_534 = L.marker([41.90211566, 12.45694795]);
+marker_534.bindPopup("twitt");
+map.addLayer(marker_534)
+
+var marker_535 = L.marker([29.460711, -98.521606]);
+marker_535.bindPopup("twitt");
+map.addLayer(marker_535)
+
+var marker_536 = L.marker([47.66799001, -122.31305844]);
+marker_536.bindPopup("twitt");
+map.addLayer(marker_536)
+
+var marker_537 = L.marker([41.12966208, 16.39102758]);
+marker_537.bindPopup("twitt");
+map.addLayer(marker_537)
+
+var marker_538 = L.marker([53.7097988, -6.3213251]);
+marker_538.bindPopup("twitt");
+map.addLayer(marker_538)
+
+var marker_539 = L.marker([41.90206197, 12.45825718]);
+marker_539.bindPopup("twitt");
+map.addLayer(marker_539)
+
+var marker_540 = L.marker([45.05798966, -122.77620421]);
+marker_540.bindPopup("twitt");
+map.addLayer(marker_540)
+
+var marker_541 = L.marker([6.3977252, 5.6123645]);
+marker_541.bindPopup("twitt");
+map.addLayer(marker_541)
+
+var marker_542 = L.marker([-27.5257022, 153.0627166]);
+marker_542.bindPopup("twitt");
+map.addLayer(marker_542)
+
+var marker_543 = L.marker([9.1009338, -79.3491641]);
+marker_543.bindPopup("twitt");
+map.addLayer(marker_543)
+
+var marker_544 = L.marker([41.83679384, 12.51201319]);
+marker_544.bindPopup("twitt");
+map.addLayer(marker_544)
+
+var marker_545 = L.marker([45.45644362, 9.17925862]);
+marker_545.bindPopup("twitt");
+map.addLayer(marker_545)
+
+var marker_546 = L.marker([6.8641631, 7.4087525]);
+marker_546.bindPopup("twitt");
+map.addLayer(marker_546)
+
+var marker_547 = L.marker([53.5502823, 10.0880432]);
+marker_547.bindPopup("twitt");
+map.addLayer(marker_547)
+
+var marker_548 = L.marker([-22.571714, -44.898437]);
+marker_548.bindPopup("twitt");
+map.addLayer(marker_548)
+
+var marker_549 = L.marker([14.6805807, 121.0592947]);
+marker_549.bindPopup("twitt");
+map.addLayer(marker_549)
+
+var marker_550 = L.marker([39.51651994, 15.9415121]);
+marker_550.bindPopup("twitt");
+map.addLayer(marker_550)
+
+var marker_551 = L.marker([53.7098127, -6.3212923]);
+marker_551.bindPopup("twitt");
+map.addLayer(marker_551)
+
+var marker_552 = L.marker([41.90244347, 12.4591388]);
+marker_552.bindPopup("twitt");
+map.addLayer(marker_552)
+
+var marker_553 = L.marker([14.6805807, 121.0592947]);
+marker_553.bindPopup("twitt");
+map.addLayer(marker_553)
+
+var marker_554 = L.marker([41.9023489, 12.4577864]);
+marker_554.bindPopup("twitt");
+map.addLayer(marker_554)
+
+var marker_555 = L.marker([7.6498778, -72.2204842]);
+marker_555.bindPopup("twitt");
+map.addLayer(marker_555)
+
+var marker_556 = L.marker([45.4518565, 9.0807376]);
+marker_556.bindPopup("twitt");
+map.addLayer(marker_556)
+
+var marker_557 = L.marker([39.90963728, -4.01429224]);
+marker_557.bindPopup("twitt");
+map.addLayer(marker_557)
+
+var marker_558 = L.marker([40.85089855, 14.23386833]);
+marker_558.bindPopup("twitt");
+map.addLayer(marker_558)
+
+var marker_559 = L.marker([45.70241214, 9.49137429]);
+marker_559.bindPopup("twitt");
+map.addLayer(marker_559)
+
+var marker_560 = L.marker([6.3977252, 5.6123645]);
+marker_560.bindPopup("twitt");
+map.addLayer(marker_560)
+
+var marker_561 = L.marker([41.90253122, 12.45732938]);
+marker_561.bindPopup("twitt");
+map.addLayer(marker_561)
+
+var marker_562 = L.marker([41.81748779, 12.48526855]);
+marker_562.bindPopup("twitt");
+map.addLayer(marker_562)
+
+var marker_563 = L.marker([42.3104235, -71.1381339]);
+marker_563.bindPopup("twitt");
+map.addLayer(marker_563)
+
+var marker_564 = L.marker([45.4518565, 9.0807376]);
+marker_564.bindPopup("twitt");
+map.addLayer(marker_564)
+
+var marker_565 = L.marker([45.48304275, 9.02106256]);
+marker_565.bindPopup("twitt");
+map.addLayer(marker_565)
+
+var marker_566 = L.marker([-34.5780339, -58.43647]);
+marker_566.bindPopup("twitt");
+map.addLayer(marker_566)
+
+var marker_567 = L.marker([-22.02277417, -42.36556589]);
+marker_567.bindPopup("twitt");
+map.addLayer(marker_567)
+
+var marker_568 = L.marker([-22.02277417, -42.36556589]);
+marker_568.bindPopup("twitt");
+map.addLayer(marker_568)
+
+var marker_569 = L.marker([-12.0962656, -77.0678348]);
+marker_569.bindPopup("twitt");
+map.addLayer(marker_569)
+
+var marker_570 = L.marker([11.758371, -70.1815948]);
+marker_570.bindPopup("twitt");
+map.addLayer(marker_570)
+
+var marker_571 = L.marker([41.12298607, 16.86158107]);
+marker_571.bindPopup("twitt");
+map.addLayer(marker_571)
+
+var marker_572 = L.marker([41.70141525, -86.31324462]);
+marker_572.bindPopup("twitt");
+map.addLayer(marker_572)
+
+var marker_573 = L.marker([43.8532528, 10.266111]);
+marker_573.bindPopup("twitt");
+map.addLayer(marker_573)
+
+var marker_574 = L.marker([41.9028591, 12.4715736]);
+marker_574.bindPopup("twitt");
+map.addLayer(marker_574)
+
+var marker_575 = L.marker([-33.8722611, -57.3711994]);
+marker_575.bindPopup("twitt");
+map.addLayer(marker_575)
+
+var marker_576 = L.marker([41.90241915, 12.46483323]);
+marker_576.bindPopup("twitt");
+map.addLayer(marker_576)
+
+var marker_577 = L.marker([45.76631835, 11.72855433]);
+marker_577.bindPopup("twitt");
+map.addLayer(marker_577)
+
+var marker_578 = L.marker([45.60724331, 9.52297846]);
+marker_578.bindPopup("twitt");
+map.addLayer(marker_578)
+
+var marker_579 = L.marker([6.8641631, 7.4087525]);
+marker_579.bindPopup("twitt");
+map.addLayer(marker_579)
+
+var marker_580 = L.marker([13.2931917, 123.4817214]);
+marker_580.bindPopup("twitt");
+map.addLayer(marker_580)
+
+var marker_581 = L.marker([11.758371, -70.1815948]);
+marker_581.bindPopup("twitt");
+map.addLayer(marker_581)
+
+var marker_582 = L.marker([10.7229117, -61.4773001]);
+marker_582.bindPopup("twitt");
+map.addLayer(marker_582)
+
+var marker_583 = L.marker([41.9023679, 12.45864975]);
+marker_583.bindPopup("twitt");
+map.addLayer(marker_583)
+
+var marker_584 = L.marker([41.9023679, 12.45864975]);
+marker_584.bindPopup("twitt");
+map.addLayer(marker_584)
+
+var marker_585 = L.marker([11.758371, -70.1815948]);
+marker_585.bindPopup("twitt");
+map.addLayer(marker_585)
+
+var marker_586 = L.marker([-34.61064, -58.44984]);
+marker_586.bindPopup("twitt");
+map.addLayer(marker_586)
+
+var marker_587 = L.marker([41.90832631, 12.42578071]);
+marker_587.bindPopup("twitt");
+map.addLayer(marker_587)
+
+var marker_588 = L.marker([41.90132795, 12.45827531]);
+marker_588.bindPopup("twitt");
+map.addLayer(marker_588)
+
+var marker_589 = L.marker([41.8967143, 12.4728619]);
+marker_589.bindPopup("twitt");
+map.addLayer(marker_589)
+
+var marker_590 = L.marker([41.933171, 12.4608429]);
+marker_590.bindPopup("twitt");
+map.addLayer(marker_590)
+
+var marker_591 = L.marker([8.89743, -64.18768]);
+marker_591.bindPopup("twitt");
+map.addLayer(marker_591)
+
+var marker_592 = L.marker([14.5528056, 121.02240801]);
+marker_592.bindPopup("twitt");
+map.addLayer(marker_592)
+
+var marker_593 = L.marker([43.6800624, 10.7226471]);
+marker_593.bindPopup("twitt");
+map.addLayer(marker_593)
+
+var marker_594 = L.marker([30.33516154, -93.27271699]);
+marker_594.bindPopup("twitt");
+map.addLayer(marker_594)
+
+var marker_595 = L.marker([-6.08705056, -35.20894939]);
+marker_595.bindPopup("twitt");
+map.addLayer(marker_595)
+
+var marker_596 = L.marker([30.33510691, -93.27291576]);
+marker_596.bindPopup("twitt");
+map.addLayer(marker_596)
+
+var marker_597 = L.marker([41.12062287, 14.79000955]);
+marker_597.bindPopup("twitt");
+map.addLayer(marker_597)
+
+var marker_598 = L.marker([32.83404078, -96.75764668]);
+marker_598.bindPopup("twitt");
+map.addLayer(marker_598)
+
+var marker_599 = L.marker([39.4592279, -0.3804345]);
+marker_599.bindPopup("twitt");
+map.addLayer(marker_599)
+
+var marker_600 = L.marker([40.50059367, -3.87631136]);
+marker_600.bindPopup("twitt");
+map.addLayer(marker_600)
+
+var marker_601 = L.marker([41.9023679, 12.45864975]);
+marker_601.bindPopup("twitt");
+map.addLayer(marker_601)
+
+var marker_602 = L.marker([41.90208631, 12.45748213]);
+marker_602.bindPopup("twitt");
+map.addLayer(marker_602)
+
+var marker_603 = L.marker([40.76320904, -73.92330937]);
+marker_603.bindPopup("twitt");
+map.addLayer(marker_603)
+
+var marker_604 = L.marker([40.76318603, -73.9233694]);
+marker_604.bindPopup("twitt");
+map.addLayer(marker_604)
+
+var marker_605 = L.marker([-22.9939367, -43.2587801]);
+marker_605.bindPopup("twitt");
+map.addLayer(marker_605)
+
+var marker_606 = L.marker([-12.0743507, -77.0311124]);
+marker_606.bindPopup("twitt");
+map.addLayer(marker_606)
+
+var marker_607 = L.marker([44.10493506, 9.80621201]);
+marker_607.bindPopup("twitt");
+map.addLayer(marker_607)
+
+var marker_608 = L.marker([-17.64674532, -71.34483625]);
+marker_608.bindPopup("twitt");
+map.addLayer(marker_608)
+
+var marker_609 = L.marker([-5.194922, -37.373759]);
+marker_609.bindPopup("twitt");
+map.addLayer(marker_609)
+
+var marker_610 = L.marker([10.4910758, -66.8579462]);
+marker_610.bindPopup("twitt");
+map.addLayer(marker_610)
+
+var marker_611 = L.marker([-3.3632959, -39.82795]);
+marker_611.bindPopup("twitt");
+map.addLayer(marker_611)
+
+var marker_612 = L.marker([6.8641631, 7.4087525]);
+marker_612.bindPopup("twitt");
+map.addLayer(marker_612)
+
+var marker_613 = L.marker([43.4086968, 10.8403496]);
+marker_613.bindPopup("twitt");
+map.addLayer(marker_613)
+
+var marker_614 = L.marker([41.94009098, 12.55948987]);
+marker_614.bindPopup("twitt");
+map.addLayer(marker_614)
+
+var marker_615 = L.marker([41.90201171, 12.45754877]);
+marker_615.bindPopup("twitt");
+map.addLayer(marker_615)
+
+var marker_616 = L.marker([45.371171, 11.13209029]);
+marker_616.bindPopup("twitt");
+map.addLayer(marker_616)
+
+var marker_617 = L.marker([9.1504236, -71.0795641]);
+marker_617.bindPopup("twitt");
+map.addLayer(marker_617)
+
+var marker_618 = L.marker([40.5005937, -3.87631139]);
+marker_618.bindPopup("twitt");
+map.addLayer(marker_618)
+
+var marker_619 = L.marker([45.82854804, 9.04672833]);
+marker_619.bindPopup("twitt");
+map.addLayer(marker_619)
+
+var marker_620 = L.marker([10.4910062, -66.8578918]);
+marker_620.bindPopup("twitt");
+map.addLayer(marker_620)
+
+var marker_621 = L.marker([44.8999308, 8.8682524]);
+marker_621.bindPopup("twitt");
+map.addLayer(marker_621)
+
+var marker_622 = L.marker([41.90253122, 12.45732938]);
+marker_622.bindPopup("twitt");
+map.addLayer(marker_622)
+
+var marker_623 = L.marker([45.50318004, 9.096367]);
+marker_623.bindPopup("twitt");
+map.addLayer(marker_623)
+
+var marker_624 = L.marker([41.896948, 12.472804]);
+marker_624.bindPopup("twitt");
+map.addLayer(marker_624)
+
+var marker_625 = L.marker([12.0723149, 124.5943771]);
+marker_625.bindPopup("twitt");
+map.addLayer(marker_625)
+
+var marker_626 = L.marker([41.896871, 12.472847]);
+marker_626.bindPopup("twitt");
+map.addLayer(marker_626)
+
+var marker_627 = L.marker([54.11213826, -6.73694696]);
+marker_627.bindPopup("twitt");
+map.addLayer(marker_627)
+
+var marker_628 = L.marker([41.89950902, 12.46362565]);
+marker_628.bindPopup("twitt");
+map.addLayer(marker_628)
+
+var marker_629 = L.marker([41.90253122, 12.45732938]);
+marker_629.bindPopup("twitt");
+map.addLayer(marker_629)
+
+var marker_630 = L.marker([41.90458695, 12.460231]);
+marker_630.bindPopup("twitt");
+map.addLayer(marker_630)
+
+var marker_631 = L.marker([41.8995292, 12.46218983]);
+marker_631.bindPopup("twitt");
+map.addLayer(marker_631)
+
+var marker_632 = L.marker([41.90468909, 12.46033138]);
+marker_632.bindPopup("twitt");
+map.addLayer(marker_632)
+
+var marker_633 = L.marker([-22.6624623, -45.0048754]);
+marker_633.bindPopup("twitt");
+map.addLayer(marker_633)
+
+var marker_634 = L.marker([41.90445855, 12.46000079]);
+marker_634.bindPopup("twitt");
+map.addLayer(marker_634)
+
+var marker_635 = L.marker([45.8281967, 9.04615379]);
+marker_635.bindPopup("twitt");
+map.addLayer(marker_635)
+
+var marker_636 = L.marker([41.90061277, 12.46496072]);
+marker_636.bindPopup("twitt");
+map.addLayer(marker_636)
+
+var marker_637 = L.marker([33.8708, 35.863239]);
+marker_637.bindPopup("twitt");
+map.addLayer(marker_637)
+
+var marker_638 = L.marker([41.90458185, 12.46005897]);
+marker_638.bindPopup("twitt");
+map.addLayer(marker_638)
+
+var marker_639 = L.marker([26.3038804, -80.1286374]);
+marker_639.bindPopup("twitt");
+map.addLayer(marker_639)
+
+var marker_640 = L.marker([14.3349591, 121.063377]);
+marker_640.bindPopup("twitt");
+map.addLayer(marker_640)
+
+var marker_641 = L.marker([51.54367281, 0.66433655]);
+marker_641.bindPopup("twitt");
+map.addLayer(marker_641)
+
+var marker_642 = L.marker([19.028991, -97.9647358]);
+marker_642.bindPopup("twitt");
+map.addLayer(marker_642)
+
+var marker_643 = L.marker([39.30761791, 16.20538458]);
+marker_643.bindPopup("twitt");
+map.addLayer(marker_643)
+
+var marker_644 = L.marker([45.42039108, 11.37283325]);
+marker_644.bindPopup("twitt");
+map.addLayer(marker_644)
+
+var marker_645 = L.marker([19.7467507, -99.1821849]);
+marker_645.bindPopup("twitt");
+map.addLayer(marker_645)
+
+var marker_646 = L.marker([10.0870897, -69.2751825]);
+marker_646.bindPopup("twitt");
+map.addLayer(marker_646)
+
+var marker_647 = L.marker([42.23438246, -8.69648681]);
+marker_647.bindPopup("twitt");
+map.addLayer(marker_647)
+
+var marker_648 = L.marker([40.66805917, 14.80358263]);
+marker_648.bindPopup("twitt");
+map.addLayer(marker_648)
+
+var marker_649 = L.marker([40.06930666, -82.85298653]);
+marker_649.bindPopup("twitt");
+map.addLayer(marker_649)
+
+var marker_650 = L.marker([40.533341, 17.5808086]);
+marker_650.bindPopup("twitt");
+map.addLayer(marker_650)
+
+var marker_651 = L.marker([45.76658403, 11.72865423]);
+marker_651.bindPopup("twitt");
+map.addLayer(marker_651)
+
+var marker_652 = L.marker([42.80307947, -1.66413207]);
+marker_652.bindPopup("twitt");
+map.addLayer(marker_652)
+
+var marker_653 = L.marker([41.5144346, -81.57843593]);
+marker_653.bindPopup("twitt");
+map.addLayer(marker_653)
+
+var marker_654 = L.marker([18.5317908, -88.2712447]);
+marker_654.bindPopup("twitt");
+map.addLayer(marker_654)
+
+var marker_655 = L.marker([-25.51086281, -54.61303487]);
+marker_655.bindPopup("twitt");
+map.addLayer(marker_655)
+
+var marker_656 = L.marker([-0.1979399, -78.4882272]);
+marker_656.bindPopup("twitt");
+map.addLayer(marker_656)
+
+var marker_657 = L.marker([41.89955556, 12.45631745]);
+marker_657.bindPopup("twitt");
+map.addLayer(marker_657)
+
+var marker_658 = L.marker([41.89895506, 12.4730444]);
+marker_658.bindPopup("twitt");
+map.addLayer(marker_658)
+
+var marker_659 = L.marker([26.3038905, -80.128614]);
+marker_659.bindPopup("twitt");
+map.addLayer(marker_659)
+
+var marker_660 = L.marker([45.53441366, 9.93478356]);
+marker_660.bindPopup("twitt");
+map.addLayer(marker_660)
+
+var marker_661 = L.marker([40.80492579, -81.93428373]);
+marker_661.bindPopup("twitt");
+map.addLayer(marker_661)
+
+var marker_662 = L.marker([41.49186813, -73.9733579]);
+marker_662.bindPopup("twitt");
+map.addLayer(marker_662)
+
+var marker_663 = L.marker([43.64303797, -79.39180211]);
+marker_663.bindPopup("twitt");
+map.addLayer(marker_663)
+
+var marker_664 = L.marker([41.8944099, 12.5592601]);
+marker_664.bindPopup("twitt");
+map.addLayer(marker_664)
+
+var marker_665 = L.marker([41.90227312, 12.46428827]);
+marker_665.bindPopup("twitt");
+map.addLayer(marker_665)
+
+var marker_666 = L.marker([-5.86450044, -35.19679218]);
+marker_666.bindPopup("twitt");
+map.addLayer(marker_666)
+
+var marker_667 = L.marker([39.55684241, -86.18641536]);
+marker_667.bindPopup("twitt");
+map.addLayer(marker_667)
+
+var marker_668 = L.marker([30.0762415, -95.1986114]);
+marker_668.bindPopup("twitt");
+map.addLayer(marker_668)
+
+var marker_669 = L.marker([40.8596365, -73.88413754]);
+marker_669.bindPopup("twitt");
+map.addLayer(marker_669)
+
+var marker_670 = L.marker([-11.9295807, -77.0569667]);
+marker_670.bindPopup("twitt");
+map.addLayer(marker_670)
+
+var marker_671 = L.marker([41.90356773, 12.48808783]);
+marker_671.bindPopup("twitt");
+map.addLayer(marker_671)
+
+var marker_672 = L.marker([41.843334, 12.5898752]);
+marker_672.bindPopup("twitt");
+map.addLayer(marker_672)
+
+var marker_673 = L.marker([41.88533467, 12.50978111]);
+marker_673.bindPopup("twitt");
+map.addLayer(marker_673)
+
+var marker_674 = L.marker([-23.53841072, -47.19101428]);
+marker_674.bindPopup("twitt");
+map.addLayer(marker_674)
+
+var marker_675 = L.marker([43.7079253, 10.4016514]);
+marker_675.bindPopup("twitt");
+map.addLayer(marker_675)
+
+var marker_676 = L.marker([14.59694371, 120.98510011]);
+marker_676.bindPopup("twitt");
+map.addLayer(marker_676)
+
+var marker_677 = L.marker([-25.3373118, -57.4243135]);
+marker_677.bindPopup("twitt");
+map.addLayer(marker_677)
+
+var marker_678 = L.marker([41.89956198, 12.45631743]);
+marker_678.bindPopup("twitt");
+map.addLayer(marker_678)
+
+var marker_679 = L.marker([-27.5704415, -48.9848621]);
+marker_679.bindPopup("twitt");
+map.addLayer(marker_679)
+
+var marker_680 = L.marker([41.89366016, 12.5033529]);
+marker_680.bindPopup("twitt");
+map.addLayer(marker_680)
+
+var marker_681 = L.marker([49.81522, 6.13348]);
+marker_681.bindPopup("twitt");
+map.addLayer(marker_681)
+
+var marker_682 = L.marker([-33.5631286, -70.785249]);
+marker_682.bindPopup("twitt");
+map.addLayer(marker_682)
+
+var marker_683 = L.marker([41.89366239, 12.50335809]);
+marker_683.bindPopup("twitt");
+map.addLayer(marker_683)
+
+var marker_684 = L.marker([41.90241918, 12.45762936]);
+marker_684.bindPopup("twitt");
+map.addLayer(marker_684)
+
+var marker_685 = L.marker([41.89918738, 12.45360986]);
+marker_685.bindPopup("twitt");
+map.addLayer(marker_685)
+
+var marker_686 = L.marker([43.05263684, -77.51245005]);
+marker_686.bindPopup("twitt");
+map.addLayer(marker_686)
+
+var marker_687 = L.marker([41.8992094, 12.45350934]);
+marker_687.bindPopup("twitt");
+map.addLayer(marker_687)
+
+var marker_688 = L.marker([41.90241918, 12.45762936]);
+marker_688.bindPopup("twitt");
+map.addLayer(marker_688)
+
+var marker_689 = L.marker([41.89544271, 12.47007711]);
+marker_689.bindPopup("twitt");
+map.addLayer(marker_689)
+
+var marker_690 = L.marker([41.90253122, 12.45732938]);
+marker_690.bindPopup("twitt");
+map.addLayer(marker_690)
+
+var marker_691 = L.marker([44.10223115, 9.99054593]);
+marker_691.bindPopup("twitt");
+map.addLayer(marker_691)
+
+var marker_692 = L.marker([51.5150581, -0.1301539]);
+marker_692.bindPopup("twitt");
+map.addLayer(marker_692)
+
+var marker_693 = L.marker([45.50206859, 9.09685207]);
+marker_693.bindPopup("twitt");
+map.addLayer(marker_693)
+
+var marker_694 = L.marker([41.90241918, 12.45762936]);
+marker_694.bindPopup("twitt");
+map.addLayer(marker_694)
+
+var marker_695 = L.marker([41.89538559, 12.47004157]);
+marker_695.bindPopup("twitt");
+map.addLayer(marker_695)
+
+var marker_696 = L.marker([45.946949, 24.9804]);
+marker_696.bindPopup("twitt");
+map.addLayer(marker_696)
+
+var marker_697 = L.marker([46.9172155, -1.3346788]);
+marker_697.bindPopup("twitt");
+map.addLayer(marker_697)
+
+var marker_698 = L.marker([41.90241918, 12.45762936]);
+marker_698.bindPopup("twitt");
+map.addLayer(marker_698)
+
+var marker_699 = L.marker([41.89925029, 12.45355647]);
+marker_699.bindPopup("twitt");
+map.addLayer(marker_699)
+
+var marker_700 = L.marker([41.89527526, 12.46959404]);
+marker_700.bindPopup("twitt");
+map.addLayer(marker_700)
+
+var marker_701 = L.marker([7.81270011, -72.2047279]);
+marker_701.bindPopup("twitt");
+map.addLayer(marker_701)
+
+var marker_702 = L.marker([41.89544232, 12.4700769]);
+marker_702.bindPopup("twitt");
+map.addLayer(marker_702)
+
+var marker_703 = L.marker([7.81076189, -72.20381027]);
+marker_703.bindPopup("twitt");
+map.addLayer(marker_703)
+
+var marker_704 = L.marker([41.8954409, 12.47006999]);
+marker_704.bindPopup("twitt");
+map.addLayer(marker_704)
+
+var marker_705 = L.marker([-22.66162253, -45.00489301]);
+marker_705.bindPopup("twitt");
+map.addLayer(marker_705)
+
+var marker_706 = L.marker([45.783821, -108.505676]);
+marker_706.bindPopup("twitt");
+map.addLayer(marker_706)
+
+var marker_707 = L.marker([35.67532341, -78.68919239]);
+marker_707.bindPopup("twitt");
+map.addLayer(marker_707)
+
+var marker_708 = L.marker([4.8868481, 7.1144106]);
+marker_708.bindPopup("twitt");
+map.addLayer(marker_708)
+
+var marker_709 = L.marker([44.82120686, 11.62342733]);
+marker_709.bindPopup("twitt");
+map.addLayer(marker_709)
+
+var marker_710 = L.marker([45.4518491, 9.0807173]);
+marker_710.bindPopup("twitt");
+map.addLayer(marker_710)
+
+var marker_711 = L.marker([33.20599961, -87.54841244]);
+marker_711.bindPopup("twitt");
+map.addLayer(marker_711)
+
+var marker_712 = L.marker([27.72869259, -97.40283084]);
+marker_712.bindPopup("twitt");
+map.addLayer(marker_712)
+
+var marker_713 = L.marker([10.6101226, -67.0138832]);
+marker_713.bindPopup("twitt");
+map.addLayer(marker_713)
+
+var marker_714 = L.marker([42.58228797, 12.64059613]);
+marker_714.bindPopup("twitt");
+map.addLayer(marker_714)
+
+var marker_715 = L.marker([40.56406848, -3.60868902]);
+marker_715.bindPopup("twitt");
+map.addLayer(marker_715)
+
+var marker_716 = L.marker([-22.67101, -45.003664]);
+marker_716.bindPopup("twitt");
+map.addLayer(marker_716)
+
+var marker_717 = L.marker([-22.66027585, -45.00466298]);
+marker_717.bindPopup("twitt");
+map.addLayer(marker_717)
+
+var marker_718 = L.marker([43.02313493, -75.99401498]);
+marker_718.bindPopup("twitt");
+map.addLayer(marker_718)
+
+var marker_719 = L.marker([41.89929995, 12.45346075]);
+marker_719.bindPopup("twitt");
+map.addLayer(marker_719)
+
+var marker_720 = L.marker([38.5838568, -90.55628696]);
+marker_720.bindPopup("twitt");
+map.addLayer(marker_720)
+
+var marker_721 = L.marker([47.1878059, -1.5287921]);
+marker_721.bindPopup("twitt");
+map.addLayer(marker_721)
+
+var marker_722 = L.marker([32.89700133, -96.57240895]);
+marker_722.bindPopup("twitt");
+map.addLayer(marker_722)
+
+var marker_723 = L.marker([39.1613817, -0.241722]);
+marker_723.bindPopup("twitt");
+map.addLayer(marker_723)
+
+var marker_724 = L.marker([13.6751583, -89.2902374]);
+marker_724.bindPopup("twitt");
+map.addLayer(marker_724)
+
+var marker_725 = L.marker([53.37815482, -9.01605449]);
+marker_725.bindPopup("twitt");
+map.addLayer(marker_725)
+
+var marker_726 = L.marker([41.893655, 12.50335583]);
+marker_726.bindPopup("twitt");
+map.addLayer(marker_726)
+
+
+
+
+
+
+</script>
+
+</body>
