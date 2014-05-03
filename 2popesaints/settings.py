@@ -1,5 +1,11 @@
-consumer_key="nmiw1UEl0oKg8f3rlyvBiA"
-consumer_secret="CXRjsyEYRNBkFcnYprohd83b1epJGRmE2kS6FKdjMo"
+consumer_key=""
+consumer_secret=""
 
-access_token="32822337-ytEom14Ta9mS7FTAvTZcVBOE2sXn7blYYnT6UC6Zj"
-access_token_secret="fP7YRLeCUPXQNzyGtk8L17ZX03QG9oW7t2ycqHRKE"
+access_token=""
+access_token_secret=""
+
+
+try:
+    from settings_env import *
+except ImportError:
+    pass
