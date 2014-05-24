@@ -7,16 +7,16 @@ date,team_a,team_b,result
 16/07/30,Cile,Messico,3-0
 17/07/30,Yugoslavia,Bolivia,4-0
 17/07/30,USA,Paraguay,3-0
-18/07/30,Uruguay,Per,1-0
+18/07/30,Uruguai,Per,1-0
 19/07/30,Argentina,Messico,6-3
 19/07/30,Cile,Francia,1-0
 20/07/30,Brasile,Bolivia,4-0
 20/07/30,Paraguay,Belgio,1-0
-21/07/30,Uruguay,Romania,4-0
+21/07/30,Uruguai,Romania,4-0
 22/07/30,Argentina,Cile,3-1
 26/07/30,Argentina,USA,6-1
-27/07/30,Uruguay,Yugoslavia,6-1
-30/07/30,Uruguay,Argentina,4-2
+27/07/30,Uruguai,Yugoslavia,6-1
+30/07/30,Uruguai,Argentina,4-2
 27/05/34,Italia,USA,7-1
 27/05/34,Germania,Belgio,5-2
 27/05/34,Cecoslovacchia,Romania,2-1
@@ -24,7 +24,7 @@ date,team_a,team_b,result
 27/05/34,Svezia,Argentina,3-2
 27/05/34,Spagna,Brasile,3-1
 27/05/34,Ungheria,Egitto,4-2
-27/05/34,Austria,Francia,2-2
+27/05/34,Austria,Francia,3-2
 31/05/34,Austria,Ungheria,2-1
 31/05/34,Cecoslovacchia,Svizzera,3-2
 31/05/34,Germania,Svezia,2-1
@@ -33,13 +33,13 @@ date,team_a,team_b,result
 3/6/34,Italia,Austria,1-0
 3/6/34,Cecoslovacchia,Germania,3-1
 7/6/34,Germania,Austria,3-2
-10/6/34,Italia,Cecoslovacchia,1-1
+10/6/34,Italia,Cecoslovacchia,2-1
 4/6/38,Svizzera,Germania,1-1
-5/6/38,Italia,Norvegia,1-1
+5/6/38,Italia,Norvegia,2-1
 5/6/38,Ungheria,Indie Olandesi,6-0
-5/6/38,Cecoslovacchia,Olanda,0-0
+5/6/38,Cecoslovacchia,Olanda,3-0
 5/6/38,Francia,Belgio,3-1
-5/6/38,Brasile,Polonia,4-2
+5/6/38,Brasile,Polonia,6-5
 5/6/38,Cuba,Romania,3-3
 9/6/38,Cuba,Romania,2-1
 9/6/38,Svizzera,Germania,4-2
@@ -67,38 +67,38 @@ date,team_a,team_b,result
 2/7/50,Cile,USA,5-2
 2/7/50,Spagna,Inghilterra,1-0
 2/7/50,Italia,Paraguay,2-0
-2/7/50,Uruguay,Bolivia,8-0
-9/7/50,Uruguay,Spagna,2-2
+2/7/50,Uruguai,Bolivia,8-0
+9/7/50,Uruguai,Spagna,2-2
 9/7/50,Brasile,Svezia,7-1
 13/07/50,Brasile,Spagna,6-1
-13/07/50,Uruguay,Svezia,3-2
-16/07/50,Uruguay,Brasile,2-1
+13/07/50,Uruguai,Svezia,3-2
+16/07/50,Uruguai,Brasile,2-1
 16/07/50,Svezia,Spagna,3-1
 16/06/54,Brasile,Messico,5-0
 16/06/54,Yugoslavia,Francia,1-0
 16/06/54,Austria,Scozia,1-0
-16/06/54,Uruguay,Cecoslovacchia,2-0
+16/06/54,Uruguai,Cecoslovacchia,2-0
 17/06/54,Ungheria,Corea del Sud,9-0
 17/06/54,Germania,Turchia,4-1
-17/06/54,Inghilterra,Belgio,3-3
+17/06/54,Inghilterra,Belgio,4-4
 17/06/54,Svizzera,Italia,2-1
 19/06/54,Francia,Messico,3-2
 19/06/54,Brasile,Yugoslavia,1-1
 19/06/54,Austria,Cecoslovacchia,5-0
-19/06/54,Uruguay,Scozia,7-0
+19/06/54,Uruguai,Scozia,7-0
 20/06/54,Ungheria,Germania,8-3
 20/06/54,Turchia,Corea del Sud,7-0
 20/06/54,Inghilterra,Svizzera,2-0
 20/06/54,Italia,Belgio,4-1
 23/06/54,Germania,Turchia,7-2
 23/06/54,Svizzera,Italia,4-1
-26/06/54,Uruguay,Inghilterra,4-2
+26/06/54,Uruguai,Inghilterra,4-2
 26/06/54,Austria,Svizzera,7-5
 27/06/54,Germania,Yugoslavia,2-0
 27/06/54,Ungheria,Brasile,4-2
-30/06/54,Ungheria,Uruguay,2-2
+30/06/54,Ungheria,Uruguai,4-2
 30/06/54,Germania,Austria,6-1
-3/7/54,Austria,Uruguay,3-1
+3/7/54,Austria,Uruguai,3-1
 4/7/54,Germania,Ungheria,3-2
 8/6/58,Irlanda del Nord,Cecoslovacchia,1-0
 8/6/58,Argentina,Germania,1-3
@@ -124,7 +124,7 @@ date,team_a,team_b,result
 15/06/58,Svezia,Galles,0-0
 15/06/58,Inghilterra,Austria,2-2
 15/06/58,Brasile,Unione Sovietica,2-0
-17/06/58,Irlanda del Nord,Cecoslovacchia,1-1
+17/06/58,Irlanda del Nord,Cecoslovacchia,2-1
 17/06/58,Galles,Ungheria,2-1
 17/06/58,Unione Sovietica,Inghilterra,1-0
 19/06/58,Germania,Yugoslavia,1-0
@@ -135,7 +135,7 @@ date,team_a,team_b,result
 24/06/58,Brasile,Francia,5-2
 28/06/58,Francia,Germania,6-3
 29/06/58,Brasile,Svezia,5-2
-30/05/62,Uruguay,Colombia,2-1
+30/05/62,Uruguai,Colombia,2-1
 30/05/62,Cile,Svizzera,3-1
 30/05/62,Brasile,Messico,2-0
 30/05/62,Argentina,Bulgaria,1-0
@@ -143,7 +143,7 @@ date,team_a,team_b,result
 31/05/62,Germania,Italia,0-0
 31/05/62,Cecoslovacchia,Spagna,1-0
 31/05/62,Ungheria,Inghilterra,2-1
-2/6/62,Yugoslavia,Uruguay,3-1
+2/6/62,Yugoslavia,Uruguai,3-1
 2/6/62,Cile,Italia,2-0
 2/6/62,Brasile,Cecoslovacchia,0-0
 2/6/62,Inghilterra,Argentina,3-1
@@ -151,7 +151,7 @@ date,team_a,team_b,result
 3/6/62,Germania,Svizzera,2-1
 3/6/62,Spagna,Messico,1-0
 3/6/62,Ungheria,Bulgaria,6-1
-6/6/62,Unione Sovietica,Uruguay,2-1
+6/6/62,Unione Sovietica,Uruguai,2-1
 6/6/62,Germania,Cile,2-0
 6/6/62,Brasile,Spagna,2-1
 6/6/62,Ungheria,Argentina,0-0
@@ -167,7 +167,7 @@ date,team_a,team_b,result
 13/06/62,Brasile,Cile,4-2
 16/06/62,Cile,Yugoslavia,1-0
 17/06/62,Brasile,Cecoslovacchia,3-1
-11/7/66,Inghilterra,Uruguay,0-0
+11/7/66,Inghilterra,Uruguai,0-0
 12/7/66,Germania,Svizzera,5-0
 12/7/66,Brasile,Bulgaria,2-0
 12/7/66,Unione Sovietica,Corea del Nord,3-0
@@ -175,7 +175,7 @@ date,team_a,team_b,result
 13/07/66,Argentina,Spagna,2-1
 13/07/66,Portogallo,Ungheria,3-1
 13/07/66,Italia,Cile,2-0
-15/07/66,Uruguay,Francia,2-1
+15/07/66,Uruguai,Francia,2-1
 15/07/66,Spagna,Svizzera,2-1
 15/07/66,Ungheria,Brasile,3-1
 15/07/66,Corea del Nord,Cile,1-1
@@ -183,7 +183,7 @@ date,team_a,team_b,result
 16/07/66,Germania,Argentina,0-0
 16/07/66,Portogallo,Bulgaria,3-0
 16/07/66,Unione Sovietica,Italia,1-0
-19/07/66,Uruguay,Messico,0-0
+19/07/66,Uruguai,Messico,0-0
 19/07/66,Argentina,Svizzera,2-0
 19/07/66,Portogallo,Brasile,3-1
 19/07/66,Corea del Nord,Italia,1-0
@@ -193,14 +193,14 @@ date,team_a,team_b,result
 20/07/66,Unione Sovietica,Cile,2-1
 23/07/66,Inghilterra,Argentina,1-0
 23/07/66,Unione Sovietica,Ungheria,2-1
-23/07/66,Germania,Uruguay,4-0
+23/07/66,Germania,Uruguai,4-0
 23/07/66,Portogallo,Corea del Nord,5-3
 25/07/66,Germania,Unione Sovietica,2-1
 26/07/66,Inghilterra,Portogallo,2-1
 28/07/66,Portogallo,Unione Sovietica,2-1
-30/07/66,Inghilterra,Germania,2-2
+30/07/66,Inghilterra,Germania,4-2
 31/05/70,Messico,Unione Sovietica,0-0
-2/6/70,Uruguay,Israele,2-0
+2/6/70,Uruguai,Israele,2-0
 2/6/70,Inghilterra,Romania,1-0
 2/6/70,Per,Bulgaria,3-2
 3/6/70,Belgio,El Salvador,3-0
@@ -208,7 +208,7 @@ date,team_a,team_b,result
 3/6/70,Brasile,Cecoslovacchia,4-1
 3/6/70,Germania,Marocco,2-1
 6/6/70,Unione Sovietica,Belgio,4-1
-6/6/70,Uruguay,Italia,0-0
+6/6/70,Uruguai,Italia,0-0
 6/6/70,Romania,Cecoslovacchia,2-1
 6/6/70,Per,Marocco,3-0
 7/6/70,Messico,El Salvador,4-0
@@ -216,27 +216,27 @@ date,team_a,team_b,result
 7/6/70,Brasile,Inghilterra,1-0
 7/6/70,Germania,Bulgaria,5-2
 10/6/70,Unione Sovietica,El Salvador,2-0
-10/6/70,Svezia,Uruguay,1-0
+10/6/70,Svezia,Uruguai,1-0
 10/6/70,Brasile,Romania,3-2
 10/6/70,Germania,Per,3-1
 11/6/70,Messico,Belgio,1-0
 11/6/70,Italia,Israele,0-0
 11/6/70,Inghilterra,Cecoslovacchia,1-0
 11/6/70,Bulgaria,Marocco,1-1
-14/06/70,Uruguay,Unione Sovietica,0-0
+14/06/70,Uruguai,Unione Sovietica,1-0
 14/06/70,Italia,Messico,4-1
 14/06/70,Brasile,Per,4-2
-14/06/70,Germania,Inghilterra,2-2
-17/06/70,Italia,Germania,1-1
-17/06/70,Brasile,Uruguay,3-1
-20/06/70,Germania,Uruguay,1-0
+14/06/70,Germania,Inghilterra,3-2
+17/06/70,Italia,Germania,4-3
+17/06/70,Brasile,Uruguai,3-1
+20/06/70,Germania,Uruguai,1-0
 21/06/70,Brasile,Italia,4-1
 13/06/74,Brasile,Yugoslavia,0-0
 14/06/74,Germania Est,Australia,2-0
 14/06/74,Germania,Cile,1-0
 14/06/74,Zaire,Scozia,0-2
 15/06/74,Svezia,Bulgaria,0-0
-15/06/74,Uruguay,Olanda,0-2
+15/06/74,Uruguai,Olanda,0-2
 15/06/74,Polonia,Argentina,3-2
 15/06/74,Italia,Haiti,3-1
 18/06/74,Cile,Germania Est,1-1
@@ -244,14 +244,14 @@ date,team_a,team_b,result
 18/06/74,Scozia,Brasile,0-0
 18/06/74,Yugoslavia,Zaire,9-0
 19/06/74,Olanda,Svezia,0-0
-19/06/74,Bulgaria,Uruguay,1-1
+19/06/74,Bulgaria,Uruguai,1-1
 19/06/74,Argentina,Italia,1-1
 19/06/74,Haiti,Polonia,0-7
 22/06/74,Germania Est,Germania,1-0
 22/06/74,Australia,Cile,0-0
 22/06/74,Zaire,Brasile,0-3
 22/06/74,Scozia,Yugoslavia,1-1
-23/06/74,Svezia,Uruguay,3-0
+23/06/74,Svezia,Uruguai,3-0
 23/06/74,Bulgaria,Olanda,1-4
 23/06/74,Polonia,Italia,2-1
 23/06/74,Argentina,Haiti,4-1
@@ -306,7 +306,7 @@ date,team_a,team_b,result
 21/06/78,Argentina,Per,6-0
 21/06/78,Brasile,Polonia,3-1
 24/06/78,Brasile,Italia,2-1
-25/06/78,Argentina,Olanda,1-1
+25/06/78,Argentina,Olanda,3-1
 13/06/82,Argentina,Belgio,0-1
 14/06/82,Italia,Polonia,0-0
 14/06/82,Brasile,Unione Sovietica,2-1
@@ -356,7 +356,7 @@ date,team_a,team_b,result
 5/7/82,Spagna,Inghilterra,0-0
 5/7/82,Italia,Brasile,3-2
 8/7/82,Polonia,Italia,0-2
-8/7/82,Germania,Francia,1-1
+8/7/82,Germania,Francia,5-4
 10/7/82,Polonia,Francia,3-2
 11/7/82,Italia,Germania,3-1
 31/05/86,Bulgaria,Italia,1-1
@@ -370,7 +370,7 @@ date,team_a,team_b,result
 3/6/86,Portogallo,Inghilterra,1-0
 4/6/86,Paraguay,Iraq,1-0
 4/6/86,Scozia,Danimarca,0-1
-4/6/86,Uruguay,Germania,1-1
+4/6/86,Uruguai,Germania,1-1
 5/6/86,Corea del Sud,Bulgaria,1-1
 5/6/86,Italia,Argentina,1-1
 5/6/86,Francia,Unione Sovietica,1-1
@@ -381,7 +381,7 @@ date,team_a,team_b,result
 7/6/86,Irlanda del Nord,Spagna,1-2
 7/6/86,Polonia,Portogallo,1-0
 8/6/86,Iraq,Belgio,1-2
-8/6/86,Danimarca,Uruguay,6-1
+8/6/86,Danimarca,Uruguai,6-1
 8/6/86,Germania,Scozia,2-1
 9/6/86,Unione Sovietica,Canada,2-0
 9/6/86,Ungheria,Francia,0-3
@@ -393,23 +393,23 @@ date,team_a,team_b,result
 11/6/86,Inghilterra,Polonia,3-0
 12/6/86,Irlanda del Nord,Brasile,0-3
 12/6/86,Algeria,Spagna,0-3
-13/06/86,Scozia,Uruguay,0-0
+13/06/86,Scozia,Uruguai,0-0
 13/06/86,Danimarca,Germania,2-0
-15/06/86,Unione Sovietica,Belgio,2-2
+15/06/86,Unione Sovietica,Belgio,3-4
 15/06/86,Messico,Bulgaria,2-0
-16/06/86,Argentina,Uruguay,1-0
+16/06/86,Argentina,Uruguai,1-0
 16/06/86,Brasile,Polonia,4-0
 17/06/86,Marocco,Germania,0-1
 17/06/86,Italia,Francia,0-2
 18/06/86,Inghilterra,Paraguay,3-0
 18/06/86,Danimarca,Spagna,1-5
-21/06/86,Germania,Messico,0-0
-21/06/86,Brasile,Francia,1-1
-22/06/86,Spagna,Belgio,1-1
+21/06/86,Germania,Messico,4-1
+21/06/86,Brasile,Francia,3-4
+22/06/86,Spagna,Belgio,4-5
 22/06/86,Argentina,Inghilterra,2-1
 25/06/86,Argentina,Belgio,2-0
 25/06/86,Francia,Germania,0-2
-28/06/86,Francia,Belgio,2-2
+28/06/86,Francia,Belgio,4-2
 29/06/86,Argentina,Germania,3-2
 8/6/90,Argentina,Camerun,0-1
 9/6/90,Italia,Austria,1-0
@@ -423,7 +423,7 @@ date,team_a,team_b,result
 12/6/90,Belgio,Corea del Sud,2-0
 12/6/90,Olanda,Egitto,1-1
 13/06/90,Argentina,Unione Sovietica,2-0
-13/06/90,Uruguay,Spagna,0-0
+13/06/90,Uruguai,Spagna,0-0
 14/06/90,Italia,USA,1-0
 14/06/90,Camerun,Romania,2-1
 14/06/90,Yugoslavia,Colombia,1-0
@@ -433,7 +433,7 @@ date,team_a,team_b,result
 16/06/90,Brasile,Costarica,1-0
 16/06/90,Inghilterra,Olanda,0-0
 17/06/90,Corea del Sud,Spagna,1-3
-17/06/90,Belgio,Uruguay,3-1
+17/06/90,Belgio,Uruguai,3-1
 17/06/90,Eire,Egitto,0-0
 18/06/90,Camerun,Unione Sovietica,0-4
 18/06/90,Argentina,Romania,1-1
@@ -444,23 +444,23 @@ date,team_a,team_b,result
 20/06/90,Svezia,Costarica,1-2
 20/06/90,Brasile,Scozia,1-0
 21/06/90,Belgio,Spagna,1-2
-21/06/90,Corea del Sud,Uruguay,0-1
+21/06/90,Corea del Sud,Uruguai,0-1
 21/06/90,Inghilterra,Egitto,1-0
 21/06/90,Eire,Olanda,1-1
 23/06/90,Cecoslovacchia,Costarica,4-1
-23/06/90,Camerun,Colombia,0-0
+23/06/90,Camerun,Colombia,2-1
 24/06/90,Germania,Olanda,2-1
 24/06/90,Brasile,Argentina,0-1
-25/06/90,Italia,Uruguay,2-0
-25/06/90,Eire,Romania,0-0
-26/06/90,Inghilterra,Belgio,0-0
-26/06/90,Spagna,Yugoslavia,1-1
+25/06/90,Italia,Uruguai,2-0
+25/06/90,Eire,Romania,5-4
+26/06/90,Inghilterra,Belgio,1-0
+26/06/90,Spagna,Yugoslavia,1-2
 30/06/90,Italia,Eire,1-0
-30/06/90,Yugoslavia,Argentina,0-0
+30/06/90,Yugoslavia,Argentina,2-3
 1/7/90,Germania,Cecoslovacchia,1-0
-1/7/90,Inghilterra,Camerun,2-2
-3/7/90,Italia,Argentina,1-1
-4/7/90,Germania,Inghilterra,1-1
+1/7/90,Inghilterra,Camerun,3-2
+3/7/90,Italia,Argentina,3-4
+4/7/90,Germania,Inghilterra,4-3
 7/7/90,Italia,Inghilterra,2-1
 8/7/90,Germania,Argentina,1-0
 17/06/94,Spagna,Corea del Sud,2-2
@@ -505,16 +505,16 @@ date,team_a,team_b,result
 3/7/94,Arabia Saudita,Svezia,1-3
 4/7/94,Brasile,USA,1-0
 4/7/94,Olanda,Eire,2-0
-5/7/94,Messico,Bulgaria,1-1
-5/7/94,Nigeria,Italia,1-1
+5/7/94,Messico,Bulgaria,1-3
+5/7/94,Nigeria,Italia,1-2
 9/7/94,Olanda,Brasile,2-3
 9/7/94,Italia,Spagna,2-1
-10/7/94,Romania,Svezia,1-1
+10/7/94,Romania,Svezia,4-5
 10/7/94,Bulgaria,Germania,2-1
 13/07/94,Svezia,Brasile,0-1
 13/07/94,Bulgaria,Italia,1-2
 16/07/94,Svezia,Bulgaria,4-0
-17/07/94,Brasile,Italia,0-0
+17/07/94,Brasile,Italia,3-2
 10/6/98,Marocco,Norvegia,2-2
 10/6/98,Brasile,Scozia,2-1
 11/6/98,Camerun,Austria,1-1
@@ -565,22 +565,22 @@ date,team_a,team_b,result
 26/06/98,Argentina,Croazia,1-0
 27/06/98,Brasile,Cile,4-1
 27/06/98,Italia,Norvegia,1-0
-28/06/98,Francia,Paraguay,0-0
+28/06/98,Francia,Paraguay,1-0
 28/06/98,Nigeria,Danimarca,1-4
 29/06/98,Olanda,Yugoslavia,2-1
 29/06/98,Germania,Messico,2-1
-30/06/98,Argentina,Inghilterra,2-2
+30/06/98,Argentina,Inghilterra,4-3
 30/06/98,Romania,Croazia,0-1
 3/7/98,Brasile,Danimarca,3-2
-3/7/98,Italia,Francia,0-0
+3/7/98,Italia,Francia,3-4
 4/7/98,Germania,Croazia,0-3
 4/7/98,Olanda,Argentina,2-1
-7/7/98,Brasile,Olanda,1-1
+7/7/98,Brasile,Olanda,4-2
 8/7/98,Francia,Croazia,2-1
 11/7/98,Olanda,Croazia,1-2
 12/7/98,Brasile,Francia,0-3
 31/05/02,Francia,Senegal,0-1
-1/6/02,Uruguay,Danimarca,1-2
+1/6/02,Uruguai,Danimarca,1-2
 1/6/02,Germania,Arabia Saudita,8-0
 1/6/02,Eire,Camerun,1-1
 2/6/02,Spagna,Slovenia,3-1
@@ -596,7 +596,7 @@ date,team_a,team_b,result
 5/6/02,USA,Portogallo,3-2
 5/6/02,Germania,Eire,1-1
 5/6/02,Russia,Tunisia,2-0
-6/6/02,Francia,Uruguay,0-0
+6/6/02,Francia,Uruguai,0-0
 6/6/02,Danimarca,Senegal,1-1
 6/6/02,Camerun,Arabia Saudita,1-0
 7/6/02,Spagna,Paraguay,3-1
@@ -612,7 +612,7 @@ date,team_a,team_b,result
 10/6/02,Portogallo,Polonia,4-0
 10/6/02,Tunisia,Belgio,1-1
 11/6/02,Danimarca,Francia,2-0
-11/6/02,Senegal,Uruguay,3-3
+11/6/02,Senegal,Uruguai,3-3
 11/6/02,Arabia Saudita,Eire,0-3
 11/6/02,Camerun,Germania,0-2
 12/6/02,Slovenia,Paraguay,1-3
@@ -629,16 +629,16 @@ date,team_a,team_b,result
 14/06/02,Belgio,Russia,3-2
 15/06/02,Danimarca,Inghilterra,0-3
 15/06/02,Germania,Paraguay,1-0
-16/06/02,Spagna,Eire,1-1
-16/06/02,Svezia,Senegal,1-1
+16/06/02,Spagna,Eire,3-2
+16/06/02,Svezia,Senegal,1-2
 17/06/02,Messico,USA,0-2
 17/06/02,Brasile,Belgio,2-0
-18/06/02,Corea del Sud,Italia,1-1
+18/06/02,Corea del Sud,Italia,2-1
 18/06/02,Giappone,Turchia,0-1
 21/06/02,Germania,USA,1-0
 21/06/02,Inghilterra,Brasile,1-2
-22/06/02,Senegal,Turchia,0-0
-22/06/02,Spagna,Corea del Sud,0-0
+22/06/02,Senegal,Turchia,0-1
+22/06/02,Spagna,Corea del Sud,3-5
 25/06/02,Germania,Corea del Sud,1-0
 26/06/02,Brasile,Turchia,1-0
 29/06/02,Corea del Sud,Turchia,2-3
@@ -692,23 +692,23 @@ date,team_a,team_b,result
 23/06/06,Togo,Francia,0-2
 23/06/06,Svizzera,Corea del Sud,2-0
 24/06/06,Germania,Svezia,2-0
-24/06/06,Argentina,Messico,1-1
+24/06/06,Argentina,Messico,2-1
 25/06/06,Inghilterra,Ecuador,1-0
 25/06/06,Portogallo,Olanda,1-0
 26/06/06,Italia,Australia,1-0
-26/06/06,Svizzera,Ucraina,0-0
+26/06/06,Svizzera,Ucraina,0-3
 27/06/06,Brasile,Ghana,3-0
 27/06/06,Spagna,Francia,1-3
-30/06/06,Germania,Argentina,1-1
+30/06/06,Germania,Argentina,5-1
 30/06/06,Italia,Ucraina,3-0
-1/7/06,Inghilterra,Portogallo,0-0
+1/7/06,Inghilterra,Portogallo,0-3
 1/7/06,Brasile,Francia,0-1
-4/7/06,Germania,Italia,0-0
+4/7/06,Germania,Italia,0-2
 5/7/06,Portogallo,Francia,0-1
 8/7/06,Germania,Portogallo,3-1
-9/7/06,Italia,Francia,1-1
+9/7/06,Italia,Francia,6-4
 11/6/10,Sudafrica,Messico,1-1
-11/6/10,Uruguay,Francia,0-0
+11/6/10,Uruguai,Francia,0-0
 12/6/10,Corea del Sud,Grecia,2-0
 12/6/10,Argentina,Nigeria,1-0
 12/6/10,Inghilterra,USA,1-1
@@ -723,7 +723,7 @@ date,team_a,team_b,result
 15/06/10,Brasile,Corea del Nord,2-1
 16/06/10,Honduras,Cile,0-1
 16/06/10,Spagna,Svizzera,0-1
-16/06/10,Sudafrica,Uruguay,0-3
+16/06/10,Sudafrica,Uruguai,0-3
 17/06/10,Argentina,Corea del Sud,4-1
 17/06/10,Grecia,Nigeria,2-1
 17/06/10,Francia,Messico,0-2
@@ -739,7 +739,7 @@ date,team_a,team_b,result
 21/06/10,Portogallo,Corea del Nord,7-0
 21/06/10,Cile,Svizzera,1-0
 21/06/10,Spagna,Honduras,2-0
-22/06/10,Messico,Uruguay,0-1
+22/06/10,Messico,Uruguai,0-1
 22/06/10,Francia,Sudafrica,1-2
 22/06/10,Nigeria,Corea del Sud,2-2
 22/06/10,Grecia,Argentina,0-2
@@ -755,19 +755,19 @@ date,team_a,team_b,result
 25/06/10,Corea del Nord,Costa dAvorio,0-3
 25/06/10,Cile,Spagna,1-2
 25/06/10,Svizzera,Honduras,0-0
-26/06/10,Uruguay,Corea del Sud,2-1
-26/06/10,USA,Ghana,1-1
+26/06/10,Uruguai,Corea del Sud,2-1
+26/06/10,USA,Ghana,1-2
 27/06/10,Germania,Inghilterra,4-1
 27/06/10,Argentina,Messico,3-1
 28/06/10,Olanda,Slovacchia,2-1
 28/06/10,Brasile,Cile,3-0
-29/06/10,Paraguay,Giappone,0-0
+29/06/10,Paraguay,Giappone,5-3
 29/06/10,Spagna,Portogallo,1-0
 2/7/10,Olanda,Brasile,2-1
-2/7/10,Uruguay,Ghana,1-1
+2/7/10,Uruguai,Ghana,5-3
 3/7/10,Argentina,Germania,0-4
 3/7/10,Paraguay,Spagna,0-1
-6/7/10,Uruguay,Olanda,2-3
+6/7/10,Uruguai,Olanda,2-3
 7/7/10,Germania,Spagna,0-1
-10/7/10,Uruguay,Germania,2-3
-11/7/10,Olanda,Spagna,0-0
+10/7/10,Uruguai,Germania,2-3
+11/7/10,Olanda,Spagna,0-1

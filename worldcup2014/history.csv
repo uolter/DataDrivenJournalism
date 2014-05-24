@@ -1,14 +1,14 @@
 Year,Country,firstp,secodp,thirdp,fourthp
 "1930
-",Uruguay,Uruguay,Argentina,Stati Uniti,Jugoslavia
+",Uruguai,Uruguai,Argentina,USA,Jugoslavia
 "1934
 ",Italia,Italia,Cecoslovacchia,Germania,Austria
 "1938
 ",Francia,Italia,Ungheria,Brasile,Svezia
 "1950
-",Brasile,Uruguay,Brasile,Svezia,Spagna
+",Brasile,Uruguai,Brasile,Svezia,Spagna
 "1954
-",Svizzera,Germania,Ungheria,Austria,Uruguay
+",Svizzera,Germania,Ungheria,Austria,Uruguai
 "1958
 ",Svezia,Brasile,Svezia,Francia,Germania
 "1962
@@ -16,7 +16,7 @@ Year,Country,firstp,secodp,thirdp,fourthp
 "1966
 ",Inghilterra,Inghilterra,Germania,Portogallo,URSS
 "1970
-",Messico,Brasile,Italia,Germania,Uruguay
+",Messico,Brasile,Italia,Germania,Uruguai
 "1974
 ",Germania,Germania,Olanda,Polonia,Brasile
 "1978
@@ -28,7 +28,7 @@ Year,Country,firstp,secodp,thirdp,fourthp
 "1990
 ",Italia,Germania,Argentina,Italia,Inghilterra
 "1994
-",Stati Uniti,Brasile,Italia,Svezia,Bulgaria
+",USA,Brasile,Italia,Svezia,Bulgaria
 "1998
 ",Francia,Francia,Brasile,Croazia,Olanda
 "2002
@@ -38,4 +38,4 @@ Giappone",Brasile,Germania,Turchia,Corea del Sud
 "2006
 ",Germania,Italia,Francia,Germania,Portogallo
 "2010
-",Sudafrica,Spagna,Olanda,Germania,Uruguay
+",Sudafrica,Spagna,Olanda,Germania,Uruguai
