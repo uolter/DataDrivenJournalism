@@ -1,6 +1,4 @@
-
-
-    # World cup
+# World cup
     
     import pandas as pd
     from IPython.core.display import HTML
