@@ -5,6 +5,7 @@ import requests
 import bs4
 import csv
 
+
 players_list = {
     'Brasile': ('http://it.wikipedia.org/wiki/Nazionale_di_calcio_del_Brasile', 0),
     'Giappone': ('http://it.wikipedia.org/wiki/Nazionale_di_calcio_del_Giappone',0),
@@ -29,7 +30,7 @@ players_list = {
     'Honduras': ('http://it.wikipedia.org/wiki/Nazionale_di_calcio_dell%27Honduras',0),
     'Costa d’Avorio' : ('http://it.wikipedia.org/wiki/Nazionale_di_calcio_della_Costa_d%27Avorio',0),
     'Nigeria' : ('http://it.wikipedia.org/wiki/Nazionale_di_calcio_della_Nigeria',0),
-    'Camerun' : ('http://it.wikipedia.org/wiki/Nazionale_di_calcio_del_Camerun',0),
+    'Camerun' : ('http://it.wikipedia.org/wiki/Nazionale_di_calcio_del_Camerun',2),
     'Gana' : ('http://it.wikipedia.org/wiki/Nazionale_di_calcio_del_Ghana',0),
     'Algeria' : ('http://it.wikipedia.org/wiki/Nazionale_di_calcio_dell%27Algeria',0),
     'Grecia' : ('http://it.wikipedia.org/wiki/Nazionale_di_calcio_della_Grecia',0),
@@ -38,7 +39,7 @@ players_list = {
     'Francia' : ('http://it.wikipedia.org/wiki/Nazionale_di_calcio_della_Francia',3),
     'Messico': ('http://it.wikipedia.org/wiki/Nazionale_di_calcio_del_Messico',0),
     'Uruguai' : ('http://it.wikipedia.org/wiki/Nazionale_di_calcio_dell%27Uruguay',0)
-} 
+}
 
 
 def replace_unicode(txt):
@@ -106,4 +107,4 @@ for t in players_list:
             pass
 
 
-save_csv('player.csv', players)
+save_csv('players.csv', players)
