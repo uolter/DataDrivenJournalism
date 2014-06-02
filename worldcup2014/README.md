@@ -1,14 +1,8 @@
+
 # World cup
     
     import pandas as pd
     from IPython.core.display import HTML
-    
-    teamA = 'Messico'
-    teamB = 'Camerun'
-    medals = pd.read_csv("medals.csv")
-    # data.head()
-    
-    medals.columns = ['team', 'first', 'second', 'third', 'fourth', 'tot']
     
     def show_best_team(teamA, teamB, data):
         
@@ -35,82 +29,24 @@
             return '%s won %d championships while %s won %d championships' % (teamA, totA, teamB, totB)
         else:
             return '%s won %d championships while %s won %d championships' % (teamB, totB, teamA, totA)
-            
-    text = show_best_team(teamA, teamB, medals) 
-    HTML(text)
-    text = show_best_winner(teamA, teamB, medals)
-    HTML(text)
-
-    Camerun won 0 medals while Messico won 0 medals
-
-
-
-
-
-Camerun won 0 championships while Messico won 0 championships
-
-
-
-
-    # world cup history
     
-    data = pd.read_csv("history.csv")
-    # data.head()
+    medals = pd.read_csv("medals.csv")
+    medals.columns = ['team', 'first', 'second', 'third', 'fourth', 'tot']
+    HTML("<b>Best teams in soccer world cups</b>")
     
-    def show_team_history(team):
-        team_hist = pd.concat(
-            (data[data.firstp == team],
-             data[data.secodp == team],
-             data[data.thirdp == team],
-             data[data.fourthp == team])
-        )
-        
-        if not team_hist.empty:
-        
-            print '%s History in the world cup' %team
-            return team_hist.sort(['Year'])
     
-    show_team_history(teamA)
-
-
-    show_team_history(teamB)
-
-
-    cal = pd.read_csv("calendar.csv")
-    # cal.head()
-    
-    def show_matches(team_a, team_b):
-            metches_ab = cal[cal.team_a == team_a][cal.team_b == team_b]
-            metches_ba = cal[cal.team_a == team_b][cal.team_a == team_a]
-            
-            metches = pd.concat((metches_ab, metches_ba))
-            
-            if not metches.empty:
-                print '%s and %s direct metches.' %(team_a, team_b)
-                return metches
-            else:
-                print '%s and %s never met before' %(team_a, team_b)
-    
-    show_matches(teamA, teamB)
-
-    Messico and Camerun never met before
+    # text = show_best_team(teamA, teamB, medals) 
+    # text = show_best_winner(teamA, teamB, medals)
 
 
 
-    # Read the teams and for each team get the medals and the number of victories
-    
-    teams = pd.read_csv("teams.csv")
-    
-    teams.head()
-    
-    # merging dataframe: team with medals
-    team_and_medals = pd.merge(teams, medals, how='left', on='team')
-    
-    team_and_medals.head(10)
-    #for t in teams.index:
-        # print teams.ix[t].team
-        # for each team get the num of medals
-        #    m = medals[medals.team == teams.ix[t].team]
+
+<b>Best teams in soccer world cups</b>
+
+
+
+
+    medals.head()
 
 
 
@@ -131,104 +67,594 @@ Camerun won 0 championships while Messico won 0 championships
   <tbody>
     <tr>
       <th>0</th>
-      <td>           Algeria</td>
-      <td>NaN</td>
-      <td>NaN</td>
-      <td>NaN</td>
-      <td>NaN</td>
-      <td>NaN</td>
-    </tr>
-    <tr>
-      <th>1</th>
-      <td>         Argentina</td>
-      <td>  2</td>
-      <td>  2</td>
-      <td>  0</td>
-      <td>  0</td>
-      <td>  4</td>
-    </tr>
-    <tr>
-      <th>2</th>
-      <td>         Australia</td>
-      <td>NaN</td>
-      <td>NaN</td>
-      <td>NaN</td>
-      <td>NaN</td>
-      <td>NaN</td>
-    </tr>
-    <tr>
-      <th>3</th>
-      <td>            Belgio</td>
-      <td>  0</td>
-      <td>  0</td>
-      <td>  0</td>
-      <td>  1</td>
-      <td>  1</td>
-    </tr>
-    <tr>
-      <th>4</th>
-      <td> Bosnia Erzegovina</td>
-      <td>NaN</td>
-      <td>NaN</td>
-      <td>NaN</td>
-      <td>NaN</td>
-      <td>NaN</td>
-    </tr>
-    <tr>
-      <th>5</th>
-      <td>           Brasile</td>
-      <td>  5</td>
-      <td>  2</td>
-      <td>  2</td>
-      <td>  1</td>
+      <td>   Brasile</td>
+      <td> 5</td>
+      <td> 2</td>
+      <td> 2</td>
+      <td> 1</td>
       <td> 10</td>
     </tr>
     <tr>
-      <th>6</th>
-      <td>           Camerun</td>
-      <td>NaN</td>
-      <td>NaN</td>
-      <td>NaN</td>
-      <td>NaN</td>
-      <td>NaN</td>
+      <th>1</th>
+      <td>    Italia</td>
+      <td> 4</td>
+      <td> 2</td>
+      <td> 1</td>
+      <td> 1</td>
+      <td>  8</td>
     </tr>
     <tr>
-      <th>7</th>
-      <td>              Cile</td>
-      <td>  0</td>
-      <td>  0</td>
-      <td>  1</td>
-      <td>  0</td>
-      <td>  1</td>
+      <th>2</th>
+      <td>  Germania</td>
+      <td> 3</td>
+      <td> 4</td>
+      <td> 4</td>
+      <td> 1</td>
+      <td> 12</td>
     </tr>
     <tr>
-      <th>8</th>
-      <td>          Colombia</td>
-      <td>NaN</td>
-      <td>NaN</td>
-      <td>NaN</td>
-      <td>NaN</td>
-      <td>NaN</td>
+      <th>3</th>
+      <td> Argentina</td>
+      <td> 2</td>
+      <td> 2</td>
+      <td> 0</td>
+      <td> 0</td>
+      <td>  4</td>
     </tr>
     <tr>
-      <th>9</th>
-      <td>     Corea del Sud</td>
-      <td>  0</td>
-      <td>  0</td>
-      <td>  0</td>
-      <td>  1</td>
-      <td>  1</td>
+      <th>4</th>
+      <td>   Uruguai</td>
+      <td> 2</td>
+      <td> 0</td>
+      <td> 0</td>
+      <td> 3</td>
+      <td>  5</td>
     </tr>
   </tbody>
 </table>
-<p>10 rows × 6 columns</p>
+<p>5 rows × 6 columns</p>
 </div>
 
 
 
 
-    players = pd.read_csv("players.csv", sep='\t')
+    s = pd.Series(medals['first'][:10].values, index=medals['team'][:10])
+    s.plot(kind='bar')
+    plt.show()
+
+
+![png](worldcup_files/worldcup_2_0.png)
+
+
+
+    # world cup history
+    # data.head()
+    def show_team_history(team):
+        team_hist = pd.concat(
+            (data[data.firstp == team],
+             data[data.secodp == team],
+             data[data.thirdp == team],
+             data[data.fourthp == team])
+        )
+        
+        if not team_hist.empty:
+        
+            print '%s History in the world cup' %team
+            return team_hist.sort(['Year'])
     
+    # show_team_history(teamA)
+    data = pd.read_csv("history.csv")
+    data
+
+
+
+
+<div style="max-height:1000px;max-width:1500px;overflow:auto;">
+<table border="1" class="dataframe">
+  <thead>
+    <tr style="text-align: right;">
+      <th></th>
+      <th>Year</th>
+      <th>Country</th>
+      <th>firstp</th>
+      <th>secodp</th>
+      <th>thirdp</th>
+      <th>fourthp</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th>0 </th>
+      <td> 1930</td>
+      <td>                   Uruguai</td>
+      <td>     Uruguai</td>
+      <td>      Argentina</td>
+      <td>        USA</td>
+      <td>    Jugoslavia</td>
+    </tr>
+    <tr>
+      <th>1 </th>
+      <td> 1934</td>
+      <td>                    Italia</td>
+      <td>      Italia</td>
+      <td> Cecoslovacchia</td>
+      <td>   Germania</td>
+      <td>       Austria</td>
+    </tr>
+    <tr>
+      <th>2 </th>
+      <td> 1938</td>
+      <td>                   Francia</td>
+      <td>      Italia</td>
+      <td>       Ungheria</td>
+      <td>    Brasile</td>
+      <td>        Svezia</td>
+    </tr>
+    <tr>
+      <th>3 </th>
+      <td> 1950</td>
+      <td>                   Brasile</td>
+      <td>     Uruguai</td>
+      <td>        Brasile</td>
+      <td>     Svezia</td>
+      <td>        Spagna</td>
+    </tr>
+    <tr>
+      <th>4 </th>
+      <td> 1954</td>
+      <td>                  Svizzera</td>
+      <td>    Germania</td>
+      <td>       Ungheria</td>
+      <td>    Austria</td>
+      <td>       Uruguai</td>
+    </tr>
+    <tr>
+      <th>5 </th>
+      <td> 1958</td>
+      <td>                    Svezia</td>
+      <td>     Brasile</td>
+      <td>         Svezia</td>
+      <td>    Francia</td>
+      <td>      Germania</td>
+    </tr>
+    <tr>
+      <th>6 </th>
+      <td> 1962</td>
+      <td>                      Cile</td>
+      <td>     Brasile</td>
+      <td> Cecoslovacchia</td>
+      <td>       Cile</td>
+      <td>    Jugoslavia</td>
+    </tr>
+    <tr>
+      <th>7 </th>
+      <td> 1966</td>
+      <td>               Inghilterra</td>
+      <td> Inghilterra</td>
+      <td>       Germania</td>
+      <td> Portogallo</td>
+      <td>          URSS</td>
+    </tr>
+    <tr>
+      <th>8 </th>
+      <td> 1970</td>
+      <td>                   Messico</td>
+      <td>     Brasile</td>
+      <td>         Italia</td>
+      <td>   Germania</td>
+      <td>       Uruguai</td>
+    </tr>
+    <tr>
+      <th>9 </th>
+      <td> 1974</td>
+      <td>                  Germania</td>
+      <td>    Germania</td>
+      <td>         Olanda</td>
+      <td>    Polonia</td>
+      <td>       Brasile</td>
+    </tr>
+    <tr>
+      <th>10</th>
+      <td> 1978</td>
+      <td>                 Argentina</td>
+      <td>   Argentina</td>
+      <td>         Olanda</td>
+      <td>    Brasile</td>
+      <td>        Italia</td>
+    </tr>
+    <tr>
+      <th>11</th>
+      <td> 1982</td>
+      <td>                    Spagna</td>
+      <td>      Italia</td>
+      <td>       Germania</td>
+      <td>    Polonia</td>
+      <td>       Francia</td>
+    </tr>
+    <tr>
+      <th>12</th>
+      <td> 1986</td>
+      <td>                   Messico</td>
+      <td>   Argentina</td>
+      <td>       Germania</td>
+      <td>    Francia</td>
+      <td>        Belgio</td>
+    </tr>
+    <tr>
+      <th>13</th>
+      <td> 1990</td>
+      <td>                    Italia</td>
+      <td>    Germania</td>
+      <td>      Argentina</td>
+      <td>     Italia</td>
+      <td>   Inghilterra</td>
+    </tr>
+    <tr>
+      <th>14</th>
+      <td> 1994</td>
+      <td>                       USA</td>
+      <td>     Brasile</td>
+      <td>         Italia</td>
+      <td>     Svezia</td>
+      <td>      Bulgaria</td>
+    </tr>
+    <tr>
+      <th>15</th>
+      <td> 1998</td>
+      <td>                   Francia</td>
+      <td>     Francia</td>
+      <td>        Brasile</td>
+      <td>    Croazia</td>
+      <td>        Olanda</td>
+    </tr>
+    <tr>
+      <th>16</th>
+      <td> 2002</td>
+      <td> Corea del Sud\n\nGiappone</td>
+      <td>     Brasile</td>
+      <td>       Germania</td>
+      <td>    Turchia</td>
+      <td> Corea del Sud</td>
+    </tr>
+    <tr>
+      <th>17</th>
+      <td> 2006</td>
+      <td>                  Germania</td>
+      <td>      Italia</td>
+      <td>        Francia</td>
+      <td>   Germania</td>
+      <td>    Portogallo</td>
+    </tr>
+    <tr>
+      <th>18</th>
+      <td> 2010</td>
+      <td>                 Sudafrica</td>
+      <td>      Spagna</td>
+      <td>         Olanda</td>
+      <td>   Germania</td>
+      <td>       Uruguai</td>
+    </tr>
+  </tbody>
+</table>
+<p>19 rows × 6 columns</p>
+</div>
+
+
+
+
+    HTML('The first world cup was held in <b>%s</b><br>\
+         The last was in <b>%s</b>' % (int(data.head(1).Year), int(data.tail(1).Year)))
+
+
+
+
+The first world cup was held in <b>1930</b><br>     The last was in <b>2010</b>
+
+
+
+
+    # Read the teams and for each team get the medals and the number of victories
+    
+    teams = pd.read_csv("teams.csv")
+    # merging dataframe: team with medals
+    team_and_medals = pd.merge(teams, medals, how='left', on='team')
+    
+    HTML('Teams in <b>2014</b> world cup and their position in the medals ranking.')
+    #for t in teams.index:
+        # print teams.ix[t].team
+        # for each team get the num of medals
+        #    m = medals[medals.team == teams.ix[t].team]
+
+
+
+
+Teams in <b>2014</b> world cup and their position in the medals ranking.
+
+
+
+
+    team_and_medals.fillna(0).sort(['tot'], ascending=(0)).head(15)
+
+
+
+
+<div style="max-height:1000px;max-width:1500px;overflow:auto;">
+<table border="1" class="dataframe">
+  <thead>
+    <tr style="text-align: right;">
+      <th></th>
+      <th>team</th>
+      <th>first</th>
+      <th>second</th>
+      <th>third</th>
+      <th>fourth</th>
+      <th>tot</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th>15</th>
+      <td>      Germania</td>
+      <td> 3</td>
+      <td> 4</td>
+      <td> 4</td>
+      <td> 1</td>
+      <td> 12</td>
+    </tr>
+    <tr>
+      <th>5 </th>
+      <td>       Brasile</td>
+      <td> 5</td>
+      <td> 2</td>
+      <td> 2</td>
+      <td> 1</td>
+      <td> 10</td>
+    </tr>
+    <tr>
+      <th>22</th>
+      <td>        Italia</td>
+      <td> 4</td>
+      <td> 2</td>
+      <td> 1</td>
+      <td> 1</td>
+      <td>  8</td>
+    </tr>
+    <tr>
+      <th>14</th>
+      <td>       Francia</td>
+      <td> 1</td>
+      <td> 1</td>
+      <td> 2</td>
+      <td> 1</td>
+      <td>  5</td>
+    </tr>
+    <tr>
+      <th>1 </th>
+      <td>     Argentina</td>
+      <td> 2</td>
+      <td> 2</td>
+      <td> 0</td>
+      <td> 0</td>
+      <td>  4</td>
+    </tr>
+    <tr>
+      <th>25</th>
+      <td>        Olanda</td>
+      <td> 0</td>
+      <td> 3</td>
+      <td> 0</td>
+      <td> 1</td>
+      <td>  4</td>
+    </tr>
+    <tr>
+      <th>20</th>
+      <td>   Inghilterra</td>
+      <td> 1</td>
+      <td> 0</td>
+      <td> 0</td>
+      <td> 1</td>
+      <td>  2</td>
+    </tr>
+    <tr>
+      <th>28</th>
+      <td>        Spagna</td>
+      <td> 1</td>
+      <td> 0</td>
+      <td> 0</td>
+      <td> 1</td>
+      <td>  2</td>
+    </tr>
+    <tr>
+      <th>26</th>
+      <td>    Portogallo</td>
+      <td> 0</td>
+      <td> 0</td>
+      <td> 1</td>
+      <td> 1</td>
+      <td>  2</td>
+    </tr>
+    <tr>
+      <th>9 </th>
+      <td> Corea del Sud</td>
+      <td> 0</td>
+      <td> 0</td>
+      <td> 0</td>
+      <td> 1</td>
+      <td>  1</td>
+    </tr>
+    <tr>
+      <th>7 </th>
+      <td>          Cile</td>
+      <td> 0</td>
+      <td> 0</td>
+      <td> 1</td>
+      <td> 0</td>
+      <td>  1</td>
+    </tr>
+    <tr>
+      <th>12</th>
+      <td>       Croazia</td>
+      <td> 0</td>
+      <td> 0</td>
+      <td> 1</td>
+      <td> 0</td>
+      <td>  1</td>
+    </tr>
+    <tr>
+      <th>3 </th>
+      <td>        Belgio</td>
+      <td> 0</td>
+      <td> 0</td>
+      <td> 0</td>
+      <td> 1</td>
+      <td>  1</td>
+    </tr>
+    <tr>
+      <th>27</th>
+      <td>        Russia</td>
+      <td> 0</td>
+      <td> 0</td>
+      <td> 0</td>
+      <td> 1</td>
+      <td>  1</td>
+    </tr>
+    <tr>
+      <th>11</th>
+      <td>    Costa Rica</td>
+      <td> 0</td>
+      <td> 0</td>
+      <td> 0</td>
+      <td> 0</td>
+      <td>  0</td>
+    </tr>
+  </tbody>
+</table>
+<p>15 rows × 6 columns</p>
+</div>
+
+
+
+
+    cal = pd.read_csv("calendar.csv")
+    
+    
+    def show_matches(team_a, team_b):
+            metches_ab = cal[cal.team_a == team_a][cal.team_b == team_b]
+            metches_ba = cal[cal.team_a == team_b][cal.team_a == team_a]
+            
+            metches = pd.concat((metches_ab, metches_ba))
+            
+            if not metches.empty:
+                print '%s and %s direct metches.' %(team_a, team_b)
+                return metches
+            else:
+                print '%s and %s never met before' %(team_a, team_b)
+    
+    HTML('All matches so far ....')
+
+
+
+
+All matches so far ....
+
+
+
+
+    cal.head()
+
+
+
+
+<div style="max-height:1000px;max-width:1500px;overflow:auto;">
+<table border="1" class="dataframe">
+  <thead>
+    <tr style="text-align: right;">
+      <th></th>
+      <th>date</th>
+      <th>team_a</th>
+      <th>team_b</th>
+      <th>result</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th>0</th>
+      <td> 13/07/30</td>
+      <td>    Francia</td>
+      <td> Messico</td>
+      <td> 4-1</td>
+    </tr>
+    <tr>
+      <th>1</th>
+      <td> 13/07/30</td>
+      <td>        USA</td>
+      <td>  Belgio</td>
+      <td> 3-0</td>
+    </tr>
+    <tr>
+      <th>2</th>
+      <td> 14/07/30</td>
+      <td> Yugoslavia</td>
+      <td> Brasile</td>
+      <td> 2-1</td>
+    </tr>
+    <tr>
+      <th>3</th>
+      <td> 14/07/30</td>
+      <td>    Romania</td>
+      <td>     Per</td>
+      <td> 3-1</td>
+    </tr>
+    <tr>
+      <th>4</th>
+      <td> 15/07/30</td>
+      <td>  Argentina</td>
+      <td> Francia</td>
+      <td> 1-0</td>
+    </tr>
+  </tbody>
+</table>
+<p>5 rows × 4 columns</p>
+</div>
+
+
+
+
+    import networkx as nx
+    G=nx.Graph()
+    
+    for r in cal.index:
+    
+        G.add_edge(cal.ix[r].team_a, cal.ix[r].team_b)
+        #print calendar.ix[r].team_a, calendar.ix[r].team_b
+        
+    nx.draw_networkx(G, node_size=50, node_color='b', font_size=8 ,label='World cup past matches')
+    
+    plt.show()
+
+
+![png](worldcup_files/worldcup_9_0.png)
+
+
+
+    # try to findout the newcomers:
+    
+    #teams.merge(cal[2:3], how='left', left_on=['team'], right_on=['team_a'])
+    
+    #pd.groupbycal[['team_a', 'team_b']]
+
+
+    players = pd.read_csv("players.csv", sep='\t')
+    HTML('<b>Players</b> in 2014 tournament.')
+
+
+
+
+<b>Players</b> in 2014 tournament.
+
+
+
+
     players.head()
 
 
@@ -242,7 +668,7 @@ Camerun won 0 championships while Messico won 0 championships
       <th>Pos</th>
       <th>Giocatore</th>
       <th>eta</th>
-      <th>Pres.</th>
+      <th>Pres</th>
       <th>Gol</th>
       <th>Nazionale</th>
     </tr>
@@ -303,11 +729,17 @@ Camerun won 0 championships while Messico won 0 championships
 
     # older and younger player
     #players.ix[players['eta'].argmax()]
-    print 'Older Players.'
+    HTML('Older Players.')
+
+
+
+
+Older Players.
+
+
+
+
     players.sort(['eta'], ascending=[0])[:5]
-
-    Older Players.
-
 
 
 
@@ -320,7 +752,7 @@ Camerun won 0 championships while Messico won 0 championships
       <th>Pos</th>
       <th>Giocatore</th>
       <th>eta</th>
-      <th>Pres.</th>
+      <th>Pres</th>
       <th>Gol</th>
       <th>Nazionale</th>
     </tr>
@@ -379,11 +811,17 @@ Camerun won 0 championships while Messico won 0 championships
 
 
 
-    print 'Younger Players.'
+    HTML('Younger Players')
+
+
+
+
+Younger Players
+
+
+
+
     players.sort(['eta'], ascending=[1])[:5]
-
-    Younger Players.
-
 
 
 
@@ -396,7 +834,7 @@ Camerun won 0 championships while Messico won 0 championships
       <th>Pos</th>
       <th>Giocatore</th>
       <th>eta</th>
-      <th>Pres.</th>
+      <th>Pres</th>
       <th>Gol</th>
       <th>Nazionale</th>
     </tr>
@@ -455,8 +893,19 @@ Camerun won 0 championships while Messico won 0 championships
 
 
 
+    HTML('Best scorer')
+
+
+
+
+Best scorer
+
+
+
+
     # best scorer
-    #players.ix[players['Gol'].argmax()]
+    # players.ix[players['Gol'].argmax()]
+    # compute a rate as GOL / Pres
     players.sort(['Gol'], ascending=[0])[:5]
 
 
@@ -470,7 +919,7 @@ Camerun won 0 championships while Messico won 0 championships
       <th>Pos</th>
       <th>Giocatore</th>
       <th>eta</th>
-      <th>Pres.</th>
+      <th>Pres</th>
       <th>Gol</th>
       <th>Nazionale</th>
     </tr>
@@ -529,6 +978,99 @@ Camerun won 0 championships while Messico won 0 championships
 
 
 
+    HTML('<b>Best scorer</b> by <b>Rate</b> (Gol / Pres')
+
+
+
+
+<b>Best scorer</b> by <b>Rate</b> (Gol / Pres
+
+
+
+
+    players_who_played = players[players['Pres'] > 0]
+    
+    # players_who_played['Rate'] = range(1, len(players_who_played) + 1)
+    
+    players_who_played['Rate'] = players_who_played['Gol'] / players_who_played['Pres']
+    players_who_played.sort(['Rate'], ascending=[0])[:5]
+
+
+
+
+<div style="max-height:1000px;max-width:1500px;overflow:auto;">
+<table border="1" class="dataframe">
+  <thead>
+    <tr style="text-align: right;">
+      <th></th>
+      <th>Pos</th>
+      <th>Giocatore</th>
+      <th>eta</th>
+      <th>Pres</th>
+      <th>Gol</th>
+      <th>Nazionale</th>
+      <th>Rate</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th>37 </th>
+      <td> A</td>
+      <td>         Alan Pulido</td>
+      <td> 23</td>
+      <td>  3</td>
+      <td>  4</td>
+      <td>        Messico</td>
+      <td> 1.333333</td>
+    </tr>
+    <tr>
+      <th>343</th>
+      <td> A</td>
+      <td> Reza Ghoochannejhad</td>
+      <td> 26</td>
+      <td> 11</td>
+      <td>  9</td>
+      <td>           Iran</td>
+      <td> 0.818182</td>
+    </tr>
+    <tr>
+      <th>337</th>
+      <td> C</td>
+      <td>      Yaghoub Karimi</td>
+      <td> 22</td>
+      <td>  6</td>
+      <td>  4</td>
+      <td>           Iran</td>
+      <td> 0.666667</td>
+    </tr>
+    <tr>
+      <th>567</th>
+      <td> A</td>
+      <td>      Abel Hernández</td>
+      <td> 23</td>
+      <td> 11</td>
+      <td>  7</td>
+      <td>        Uruguai</td>
+      <td> 0.636364</td>
+    </tr>
+    <tr>
+      <th>158</th>
+      <td> A</td>
+      <td>       Didier Drogba</td>
+      <td> 36</td>
+      <td> 99</td>
+      <td> 63</td>
+      <td> Costa d’Avorio</td>
+      <td> 0.636364</td>
+    </tr>
+  </tbody>
+</table>
+<p>5 rows × 7 columns</p>
+</div>
+
+
+
+
     # worst goolkeeper
     #players.ix[players['Gol'].argmin()]
     players.sort(['Gol'], ascending=[1])[:5]
@@ -544,7 +1086,7 @@ Camerun won 0 championships while Messico won 0 championships
       <th>Pos</th>
       <th>Giocatore</th>
       <th>eta</th>
-      <th>Pres.</th>
+      <th>Pres</th>
       <th>Gol</th>
       <th>Nazionale</th>
     </tr>
@@ -603,24 +1145,245 @@ Camerun won 0 championships while Messico won 0 championships
 
 
 
+    HTML('<h3>Group A</h3>')
+
+
+
+
+<h3>Group A</h3>
+
+
+
+
+    # https://it.wikipedia.org/wiki/Campionato_mondiale_di_calcio_2014
+    # teamA = 'Brasile'
+    # teamB = 'Croazia'
+    # teamA = 'Messico'
+    # teamB = 'Camerun'
+    teamA = 'Brasile'
+    teamB = 'Messico'
+    
+    
+    print '%s vs %s' % (teamA, teamB)
     teamA_players = players[players.Nazionale == teamA]
     teamB_players = players[players.Nazionale == teamB]
     
+    print 'Mean goal scored by %s players: %f' %(teamA, teamA_players[teamA_players.Pos <> 'P']['Gol'].mean())
+    print 'Mean goal scored by %s players: %f' %(teamB, teamB_players[teamB_players.Pos <> 'P']['Gol'].mean())
+    print
     # avarage age
     print 'Mean age %s: %f' %(teamA, teamA_players['eta'].mean())
     print 'Mean age %s: %f' %(teamB, teamB_players['eta'].mean())
 
-    Mean age Messico: 27.421053
-    Mean age Camerun: 26.434783
-
-
-
-    print 'Mean goal scored by %s players: %f' %(teamA, teamA_players[teamA_players.Pos <> 'P']['Gol'].mean())
-    print 'Mean goal scored by %s players: %f' %(teamB, teamB_players[teamB_players.Pos <> 'P']['Gol'].mean())
-
+    Brasile vs Messico
+    Mean goal scored by Brasile players: 4.750000
     Mean goal scored by Messico players: 2.235294
-    Mean goal scored by Camerun players: 4.250000
+    
+    Mean age Brasile: 27.782609
+    Mean age Messico: 27.421053
 
+
+
+    HTML('<b>Direct metches</b>')
+
+
+
+
+<b>Direct metches</b>
+
+
+
+
+    show_matches(teamA, teamB)
+
+    Brasile and Messico direct metches.
+
+
+    /Users/uolter/src/pycode/DataDrivenJournalism/worldcup2014/venv/lib/python2.7/site-packages/pandas/core/frame.py:1686: UserWarning: Boolean Series key will be reindexed to match DataFrame index.
+      "DataFrame index.", UserWarning)
+
+
+
+
+
+<div style="max-height:1000px;max-width:1500px;overflow:auto;">
+<table border="1" class="dataframe">
+  <thead>
+    <tr style="text-align: right;">
+      <th></th>
+      <th>date</th>
+      <th>team_a</th>
+      <th>team_b</th>
+      <th>result</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th>53 </th>
+      <td> 24/06/50</td>
+      <td> Brasile</td>
+      <td> Messico</td>
+      <td> 4-0</td>
+    </tr>
+    <tr>
+      <th>75 </th>
+      <td> 16/06/54</td>
+      <td> Brasile</td>
+      <td> Messico</td>
+      <td> 5-0</td>
+    </tr>
+    <tr>
+      <th>138</th>
+      <td> 30/05/62</td>
+      <td> Brasile</td>
+      <td> Messico</td>
+      <td> 2-0</td>
+    </tr>
+  </tbody>
+</table>
+<p>3 rows × 4 columns</p>
+</div>
+
+
+
+
+    HTML('<b>Best Team</b>')
+
+
+
+
+<b>Best Team</b>
+
+
+
+
+    show_best_team(teamA, teamB, medals)
+
+    Brasile won 10 medals while Messico won 0 medals
+
+
+
+    show_team_history(teamA)
+
+    Brasile History in the world cup
+
+
+
+
+
+<div style="max-height:1000px;max-width:1500px;overflow:auto;">
+<table border="1" class="dataframe">
+  <thead>
+    <tr style="text-align: right;">
+      <th></th>
+      <th>Year</th>
+      <th>Country</th>
+      <th>firstp</th>
+      <th>secodp</th>
+      <th>thirdp</th>
+      <th>fourthp</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th>2 </th>
+      <td> 1938</td>
+      <td>                   Francia</td>
+      <td>    Italia</td>
+      <td>       Ungheria</td>
+      <td>  Brasile</td>
+      <td>        Svezia</td>
+    </tr>
+    <tr>
+      <th>3 </th>
+      <td> 1950</td>
+      <td>                   Brasile</td>
+      <td>   Uruguai</td>
+      <td>        Brasile</td>
+      <td>   Svezia</td>
+      <td>        Spagna</td>
+    </tr>
+    <tr>
+      <th>5 </th>
+      <td> 1958</td>
+      <td>                    Svezia</td>
+      <td>   Brasile</td>
+      <td>         Svezia</td>
+      <td>  Francia</td>
+      <td>      Germania</td>
+    </tr>
+    <tr>
+      <th>6 </th>
+      <td> 1962</td>
+      <td>                      Cile</td>
+      <td>   Brasile</td>
+      <td> Cecoslovacchia</td>
+      <td>     Cile</td>
+      <td>    Jugoslavia</td>
+    </tr>
+    <tr>
+      <th>8 </th>
+      <td> 1970</td>
+      <td>                   Messico</td>
+      <td>   Brasile</td>
+      <td>         Italia</td>
+      <td> Germania</td>
+      <td>       Uruguai</td>
+    </tr>
+    <tr>
+      <th>9 </th>
+      <td> 1974</td>
+      <td>                  Germania</td>
+      <td>  Germania</td>
+      <td>         Olanda</td>
+      <td>  Polonia</td>
+      <td>       Brasile</td>
+    </tr>
+    <tr>
+      <th>10</th>
+      <td> 1978</td>
+      <td>                 Argentina</td>
+      <td> Argentina</td>
+      <td>         Olanda</td>
+      <td>  Brasile</td>
+      <td>        Italia</td>
+    </tr>
+    <tr>
+      <th>14</th>
+      <td> 1994</td>
+      <td>                       USA</td>
+      <td>   Brasile</td>
+      <td>         Italia</td>
+      <td>   Svezia</td>
+      <td>      Bulgaria</td>
+    </tr>
+    <tr>
+      <th>15</th>
+      <td> 1998</td>
+      <td>                   Francia</td>
+      <td>   Francia</td>
+      <td>        Brasile</td>
+      <td>  Croazia</td>
+      <td>        Olanda</td>
+    </tr>
+    <tr>
+      <th>16</th>
+      <td> 2002</td>
+      <td> Corea del Sud\n\nGiappone</td>
+      <td>   Brasile</td>
+      <td>       Germania</td>
+      <td>  Turchia</td>
+      <td> Corea del Sud</td>
+    </tr>
+  </tbody>
+</table>
+<p>10 rows × 6 columns</p>
+</div>
+
+
+
+
+    show_team_history(teamB)
 
 
     
