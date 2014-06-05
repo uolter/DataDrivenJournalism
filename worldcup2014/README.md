@@ -1,47 +1,49 @@
-
 # World cup
-    
+
     import pandas as pd
     from IPython.core.display import HTML
-    
+
     def show_best_team(teamA, teamB, data):
-        
+
         totA = data[data.team == teamA ]['tot']
         totB = data[data.team == teamB]['tot']
-        
+
         totA = int(totA) if len(totA)>0 else 0
-        totB = int(totB) if len(totB)>0 else 0 
-        
+        totB = int(totB) if len(totB)>0 else 0
+
         if totA > totB:
             print '%s won %d medals while %s won %d medals' % (teamA, totA, teamB, totB)
         else:
             print '%s won %d medals while %s won %d medals' % (teamB, totB, teamA, totA)
-       
-    
+
+
     def show_best_winner(teamA, teamB, data):
         totA = data[data.team == teamA ]['first']
         totB = data[data.team == teamB]['first']
-        
+
         totA = int(totA) if len(totA)>0 else 0
-        totB = int(totB) if len(totB)>0 else 0 
-        
+        totB = int(totB) if len(totB)>0 else 0
+
         if totA > totB:
             return '%s won %d championships while %s won %d championships' % (teamA, totA, teamB, totB)
         else:
             return '%s won %d championships while %s won %d championships' % (teamB, totB, teamA, totA)
-    
+
     medals = pd.read_csv("medals.csv")
     medals.columns = ['team', 'first', 'second', 'third', 'fourth', 'tot']
     HTML("<b>Best teams in soccer world cups</b>")
-    
-    
-    # text = show_best_team(teamA, teamB, medals) 
+
+
+    # text = show_best_team(teamA, teamB, medals)
     # text = show_best_winner(teamA, teamB, medals)
 
 
 
 
 <b>Best teams in soccer world cups</b>
+
+
+
 
 
 
@@ -136,12 +138,12 @@
              data[data.thirdp == team],
              data[data.fourthp == team])
         )
-        
+
         if not team_hist.empty:
-        
+
             print '%s History in the world cup' %team
             return team_hist.sort(['Year'])
-    
+
     # show_team_history(teamA)
     data = pd.read_csv("history.csv")
     data
@@ -354,11 +356,11 @@ The first world cup was held in <b>1930</b><br>     The last was in <b>2010</b>
 
 
     # Read the teams and for each team get the medals and the number of victories
-    
+
     teams = pd.read_csv("teams.csv")
     # merging dataframe: team with medals
     team_and_medals = pd.merge(teams, medals, how='left', on='team')
-    
+
     HTML('Teams in <b>2014</b> world cup and their position in the medals ranking.')
     #for t in teams.index:
         # print teams.ix[t].team
@@ -536,20 +538,20 @@ Teams in <b>2014</b> world cup and their position in the medals ranking.
 
 
     cal = pd.read_csv("calendar.csv")
-    
-    
+
+
     def show_matches(team_a, team_b):
             metches_ab = cal[cal.team_a == team_a][cal.team_b == team_b]
             metches_ba = cal[cal.team_a == team_b][cal.team_a == team_a]
-            
+
             metches = pd.concat((metches_ab, metches_ba))
-            
+
             if not metches.empty:
                 print '%s and %s direct metches.' %(team_a, team_b)
                 return metches
             else:
                 print '%s and %s never met before' %(team_a, team_b)
-    
+
     HTML('All matches so far ....')
 
 
@@ -622,14 +624,14 @@ All matches so far ....
 
     import networkx as nx
     G=nx.Graph()
-    
+
     for r in cal.index:
-    
+
         G.add_edge(cal.ix[r].team_a, cal.ix[r].team_b)
         #print calendar.ix[r].team_a, calendar.ix[r].team_b
-        
+
     nx.draw_networkx(G, node_size=50, node_color='b', font_size=8 ,label='World cup past matches')
-    
+
     plt.show()
 
 
@@ -637,11 +639,30 @@ All matches so far ....
 
 
 
-    # try to findout the newcomers:
-    
-    #teams.merge(cal[2:3], how='left', left_on=['team'], right_on=['team_a'])
-    
-    #pd.groupbycal[['team_a', 'team_b']]
+    print 'Network diameter:', nx.diameter(G)
+    # The diameter is the maximum eccentricity among all nodes.
+    # The eccentricity of a node v is the maximum distance from v to all other nodes in G.
+
+    print
+    print 'Betweeness Centrality'
+    betweenness_centrality = nx.betweenness_centrality(G)
+    for w in sorted(betweenness_centrality, key=betweenness_centrality.get, reverse=True)[:10]:
+        print w, betweenness_centrality[w]
+
+    Network diameter: 3
+
+    Betweeness Centrality
+    Brasile 0.123351914014
+    Germania 0.102325396665
+    Italia 0.083260275077
+    Argentina 0.0717771603579
+    Messico 0.057632943563
+    Inghilterra 0.0562684585788
+    Svezia 0.0514433365071
+    Olanda 0.0466145976928
+    Francia 0.0456625207253
+    Ungheria 0.0419517000304
+
 
 
     players = pd.read_csv("players.csv", sep='\t')
@@ -989,9 +1010,9 @@ Best scorer
 
 
     players_who_played = players[players['Pres'] > 0]
-    
+
     # players_who_played['Rate'] = range(1, len(players_who_played) + 1)
-    
+
     players_who_played['Rate'] = players_who_played['Gol'] / players_who_played['Pres']
     players_who_played.sort(['Rate'], ascending=[0])[:5]
 
@@ -1162,12 +1183,12 @@ Best scorer
     # teamB = 'Camerun'
     teamA = 'Brasile'
     teamB = 'Messico'
-    
-    
+
+
     print '%s vs %s' % (teamA, teamB)
     teamA_players = players[players.Nazionale == teamA]
     teamB_players = players[players.Nazionale == teamB]
-    
+
     print 'Mean goal scored by %s players: %f' %(teamA, teamA_players[teamA_players.Pos <> 'P']['Gol'].mean())
     print 'Mean goal scored by %s players: %f' %(teamB, teamB_players[teamB_players.Pos <> 'P']['Gol'].mean())
     print
@@ -1178,7 +1199,7 @@ Best scorer
     Brasile vs Messico
     Mean goal scored by Brasile players: 4.750000
     Mean goal scored by Messico players: 2.235294
-    
+
     Mean age Brasile: 27.782609
     Mean age Messico: 27.421053
 
@@ -1384,6 +1405,3 @@ Best scorer
 
 
     show_team_history(teamB)
-
-
-    
