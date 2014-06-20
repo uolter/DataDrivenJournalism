@@ -45,9 +45,6 @@
 
 
 
-
-
-
     medals.head()
 
 
@@ -129,7 +126,8 @@
 
 
 
-    # world cup history
+### world cup history
+
     # data.head()
     def show_team_history(team):
         team_hist = pd.concat(
@@ -556,7 +554,6 @@ Teams in <b>2014</b> world cup and their position in the medals ranking.
 
 
 
-
 All matches so far ....
 
 
@@ -652,6 +649,7 @@ All matches so far ....
     Network diameter: 3
 
     Betweeness Centrality
+
     Brasile 0.123351914014
     Germania 0.102325396665
     Italia 0.083260275077
